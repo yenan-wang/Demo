@@ -1,4 +1,4 @@
-package com.example.demo.common;
+package com.ngb.common;
 
 import android.os.Bundle;
 
@@ -13,6 +13,7 @@ public class BaseCommonActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        getWindow().setStatusBarColor(getResources().getColor(R.color.transparent, getTheme()));
         super.onCreate(savedInstanceState);
         mActivityList.add(this);
     }
@@ -21,5 +22,9 @@ public class BaseCommonActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         mActivityList.remove(this);
+    }
+
+    public int getActivityCount() {
+        return mActivityList.size();
     }
 }

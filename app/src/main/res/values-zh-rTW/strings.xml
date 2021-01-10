@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android演示示例</string>
+
+    <!--SplashActivity-->
+    <string name="splash_activity_welcome_text">歡迎使用%1$s</string>
+
+    <!--MainActivity-->
+    <string name="button_1_1">文本顯示</string>
+    <string name="main_title">點擊下方按鈕進入相應的示例頁面</string>
+    <string name="main_summary">每個頁面啟動後均是一個全新activity</string>
+
+    <string name="button_1_2">跳轉系統頁面</string>
+
+    <string name="button_1_3">耗時測試</string>
+
+    <string name="button_2_1">SharedPreferences</string>
+
+    <string name="button_2_2">SQLite演示</string>
+
+    <string name="button_2_3">喚起三方應用</string>
+
+    <string name="button_3_1">ContentProvider</string>
+
+    <string name="button_3_2">彈窗示例</string>
+
+    <string name="button_3_3">漸變示例</string>
+
+    <string name="button_4_1">回調示例</string>
+
+    <string name="button_4_2">視頻播放示例</string>
+
+    <string name="button_4_3">RecyclerView示例</string>
+
+    <string name="button_5_1">Soloop我的頁面示例</string>
+
+    <string name="button_5_2">動畫示例</string>
+
+    <string name="button_5_3">自定義view</string>
+
+    <string name="button_6_1">應用間數據通信</string>
+
+    <string name="button_6_2">動態tab增刪</string>
+
+    <string name="button_6_3">加解密</string>
+
+</resources>

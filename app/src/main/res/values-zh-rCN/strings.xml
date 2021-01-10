@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Android演示示例</string>
 
@@ -8,20 +9,6 @@
     <string name="button_1_1">文本显示</string>
     <string name="main_title">点击下方按钮进入相应的示例页面</string>
     <string name="main_summary">每个页面启动后均是一个全新的activity</string>
-
-
-    <plurals name="editor_text_ms">
-        <item quantity="one">毫秒</item>
-        <item quantity="other">毫秒</item>
-    </plurals>
-    <plurals name="draft_count">
-        <item quantity="one">草稿 %d</item>
-        <item quantity="other">草稿 %d</item>
-    </plurals>
-    <plurals name="two_variable_string">
-        <item quantity="one">至少输入%1$d个字，还差%2$d个字</item>
-        <item quantity="other">至少输入%1$d个字，还差%2$d个字</item>
-    </plurals>
 
     <string name="button_1_2">跳转系统页面</string>
 

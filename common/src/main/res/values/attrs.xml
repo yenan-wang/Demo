@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonButton">
+        <attr name="scaleX" format="float" />
+        <attr name="scaleY" format="float" />
+        <attr name="duration" format="integer" />
+
+    </declare-styleable>
+</resources>

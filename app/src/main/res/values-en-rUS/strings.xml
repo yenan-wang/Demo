@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android Demo</string>
+
+    <!--SplashActivity-->
+    <string name="splash_activity_welcome_text">欢迎使用%1$sAPP</string>
+
+    <!--MainActivity-->
+    <string name="button_1_1">Text DisPlay</string>
+    <string name="main_title">Click the button below to enter the corresponding sample page</string>
+    <string name="main_summary">Every page is a new activity after it starts</string>
+
+    <string name="button_1_2">Jump to the System Page</string>
+
+    <string name="button_1_3">Take the Test</string>
+
+    <string name="button_2_1">SharedPreferences</string>
+
+    <string name="button_2_2">SQLite Demo</string>
+
+    <string name="button_2_3">Evoke Tripartite Apps</string>
+
+    <string name="button_3_1">ContentProvider</string>
+
+    <string name="button_3_2">Pop-up Window Demo</string>
+
+    <string name="button_3_3">Gradual Demo</string>
+
+    <string name="button_4_1">Call-back Demo</string>
+
+    <string name="button_4_2">Video Play Demo</string>
+
+    <string name="button_4_3">RecyclerView Demo</string>
+
+    <string name="button_5_1">Soloop My Page Demo</string>
+
+    <string name="button_5_2">Animation Demo</string>
+
+    <string name="button_5_3">Custom View</string>
+
+    <string name="button_6_1">Data Communication Between Apps</string>
+
+    <string name="button_6_2">Add and Delete Tabs Dynamically</string>
+
+    <string name="button_6_3">Encryption and Decryption</string>
+</resources>
