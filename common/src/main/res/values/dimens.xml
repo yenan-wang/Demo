@@ -4,6 +4,7 @@
     <dimen name="dp_3">3dp</dimen>
     <dimen name="dp_5">5dp</dimen>
     <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
     <dimen name="dp_20">20dp</dimen>
     <dimen name="dp_30">30dp</dimen>
     <dimen name="dp_40">40dp</dimen>
@@ -23,4 +24,12 @@
     <dimen name="dp_300">300dp</dimen>
 
     <dimen name="common_radius_size">10dp</dimen>
+    <dimen name="common_horizontal_padding">16dp</dimen>
+    <dimen name="common_icon_small_size">24dp</dimen>
+    <dimen name="common_icon_large_size">120dp</dimen>
+    <dimen name="common_tool_bar_height">48dp</dimen>
+    <dimen name="common_small_text_size">12sp</dimen>
+    <dimen name="common_middle_text_size">16sp</dimen>
+    <dimen name="common_large_text_size">48sp</dimen>
+
 </resources>

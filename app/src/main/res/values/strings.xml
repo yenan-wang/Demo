@@ -5,11 +5,11 @@
     <string name="splash_activity_welcome_text">欢迎使用%1$sAPP</string>
 
     <!--MainActivity-->
-    <string name="button_1_1">文本显示</string>
     <string name="main_title">点击下方按钮进入相应的示例页面</string>
     <string name="main_summary">每个页面启动后均是一个全新的activity</string>
 
-
+    <!--TextActivity-->
+    <string name="button_1_1">文本显示</string>
     <plurals name="editor_text_ms">
         <item quantity="one">毫秒</item>
         <item quantity="other">毫秒</item>
@@ -44,8 +44,13 @@
     <string name="button_4_2">视频播放示例</string>
 
     <string name="button_4_3">RecyclerView示例</string>
+    <string name="money">￥</string>
+    <plurals name="pay_person_count">
+        <item quantity="one">%1d人已付款</item>
+        <item quantity="other">%1d人已付款</item>
+    </plurals>
 
-    <string name="button_5_1">Soloop我的页面示例</string>
+    <string name="button_5_1">ListView示例</string>
 
     <string name="button_5_2">动画示例</string>
 

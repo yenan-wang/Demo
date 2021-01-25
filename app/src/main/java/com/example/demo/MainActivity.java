@@ -5,14 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.example.demo.first.EditActivity;
+import com.example.demo.first.TextActivity;
+import com.example.demo.fourth.VideoActivity;
+import com.example.demo.fourth.recyclerview.RecyclerViewActivity;
 import com.ngb.common.BaseCommonActivity;
 import com.ngb.common.ui.CommonButton;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -63,30 +62,31 @@ public class MainActivity extends BaseCommonActivity {
 
     private Map<String, Class> getButtonNameAndActivityMap() {
         Map<String, Class> buttonNameList = new LinkedHashMap<>();
-        buttonNameList.put(getString(R.string.button_1_1), EditActivity.class);
+        buttonNameList.put(getString(R.string.button_1_1), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_1_2), TextActivity.class);
 /*
-        buttonNameList.put(getString(R.string.button_1_2), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_1_3), EditActivity.class);
+        buttonNameList.put(getString(R.string.button_1_3), TextActivity.class);
 
-        buttonNameList.put(getString(R.string.button_2_1), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_2_2), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_2_3), EditActivity.class);
+        buttonNameList.put(getString(R.string.button_2_1), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_2_2), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_2_3), TextActivity.class);
 
-        buttonNameList.put(getString(R.string.button_3_1), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_3_2), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_3_3), EditActivity.class);
+        buttonNameList.put(getString(R.string.button_3_1), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_3_2), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_3_3), TextActivity.class);
 
-        buttonNameList.put(getString(R.string.button_4_1), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_4_2), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_4_3), EditActivity.class);
+        buttonNameList.put(getString(R.string.button_4_1), TextActivity.class);
+*/
+        buttonNameList.put(getString(R.string.button_4_2), VideoActivity.class);
+        buttonNameList.put(getString(R.string.button_4_3), RecyclerViewActivity.class);
+/*
+        buttonNameList.put(getString(R.string.button_5_1), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_5_2), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_5_3), TextActivity.class);
 
-        buttonNameList.put(getString(R.string.button_5_1), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_5_2), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_5_3), EditActivity.class);
-
-        buttonNameList.put(getString(R.string.button_6_1), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_6_2), EditActivity.class);
-        buttonNameList.put(getString(R.string.button_6_3), EditActivity.class);
+        buttonNameList.put(getString(R.string.button_6_1), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_6_2), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_6_3), TextActivity.class);
 */
 
         return buttonNameList;

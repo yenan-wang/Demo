@@ -6,9 +6,11 @@
     <string name="splash_activity_welcome_text">欢迎使用%1$sAPP</string>
 
     <!--MainActivity-->
-    <string name="button_1_1">Text DisPlay</string>
     <string name="main_title">Click the button below to enter the corresponding sample page</string>
     <string name="main_summary">Every page is a new activity after it starts</string>
+
+    <!--TextActivity-->
+    <string name="button_1_1">Text DisPlay</string>
 
     <string name="button_1_2">Jump to the System Page</string>
 
@@ -30,9 +32,15 @@
 
     <string name="button_4_2">Video Play Demo</string>
 
+    <!--RecyclerViewActivity-->
     <string name="button_4_3">RecyclerView Demo</string>
+    <string name="money">$</string>
+    <plurals name="pay_person_count">
+        <item quantity="one">%1d person has paid</item>
+        <item quantity="other">%1d people have paid</item>
+    </plurals>
 
-    <string name="button_5_1">Soloop My Page Demo</string>
+    <string name="button_5_1">ListView Demo</string>
 
     <string name="button_5_2">Animation Demo</string>
 

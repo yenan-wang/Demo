@@ -6,9 +6,11 @@
     <string name="splash_activity_welcome_text">歡迎使用%1$s</string>
 
     <!--MainActivity-->
-    <string name="button_1_1">文本顯示</string>
     <string name="main_title">點擊下方按鈕進入相應的示例頁面</string>
     <string name="main_summary">每個頁面啟動後均是一個全新activity</string>
+
+    <!--TextActivity-->
+    <string name="button_1_1">文本顯示</string>
 
     <string name="button_1_2">跳轉系統頁面</string>
 
@@ -31,8 +33,13 @@
     <string name="button_4_2">視頻播放示例</string>
 
     <string name="button_4_3">RecyclerView示例</string>
+    <string name="money">￥</string>
+    <plurals name="pay_person_count">
+        <item quantity="one">%1d人已付款</item>
+        <item quantity="other">%1d人已付款</item>
+    </plurals>
 
-    <string name="button_5_1">Soloop我的頁面示例</string>
+    <string name="button_5_1">ListView示例</string>
 
     <string name="button_5_2">動畫示例</string>
 
