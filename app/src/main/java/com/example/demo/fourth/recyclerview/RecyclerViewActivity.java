@@ -41,6 +41,12 @@ public class RecyclerViewActivity extends BaseCommonActivity {
         mToolBar = findViewById(R.id.tool_bar);
         mToolBar.setTitleText(R.string.button_4_3);
         mToolBar.setIconImageViewVisible(View.VISIBLE);
+        mToolBar.setIconImageClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         mRecyclerView = findViewById(R.id.recycler_view);
         mAdapter = new DemoRecyclerAdapter();
         mLinearLayoutManager = new LinearLayoutManager(this);

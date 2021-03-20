@@ -14,7 +14,9 @@
 
     <string name="button_1_2">跳轉系統頁面</string>
 
-    <string name="button_1_3">耗時測試</string>
+    <!--GlideActivity-->
+    <string name="button_1_3">Glide示例</string>
+    <string name="load_network_image">加載網絡圖片</string>
 
     <string name="button_2_1">SharedPreferences</string>
 

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.demo.fifth.customview.CustomViewActivity;
+import com.example.demo.first.GlideActivity;
 import com.example.demo.first.TextActivity;
 import com.example.demo.fourth.VideoActivity;
 import com.example.demo.fourth.recyclerview.RecyclerViewActivity;
@@ -64,9 +66,8 @@ public class MainActivity extends BaseCommonActivity {
         Map<String, Class> buttonNameList = new LinkedHashMap<>();
         buttonNameList.put(getString(R.string.button_1_1), TextActivity.class);
         buttonNameList.put(getString(R.string.button_1_2), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_1_3), GlideActivity.class);
 /*
-        buttonNameList.put(getString(R.string.button_1_3), TextActivity.class);
-
         buttonNameList.put(getString(R.string.button_2_1), TextActivity.class);
         buttonNameList.put(getString(R.string.button_2_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_2_3), TextActivity.class);
@@ -82,8 +83,9 @@ public class MainActivity extends BaseCommonActivity {
 /*
         buttonNameList.put(getString(R.string.button_5_1), TextActivity.class);
         buttonNameList.put(getString(R.string.button_5_2), TextActivity.class);
-        buttonNameList.put(getString(R.string.button_5_3), TextActivity.class);
-
+        */
+        buttonNameList.put(getString(R.string.button_5_3), CustomViewActivity.class);
+/*
         buttonNameList.put(getString(R.string.button_6_1), TextActivity.class);
         buttonNameList.put(getString(R.string.button_6_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_6_3), TextActivity.class);

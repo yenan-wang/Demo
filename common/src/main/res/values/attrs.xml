@@ -6,4 +6,19 @@
         <attr name="duration" format="integer" />
 
     </declare-styleable>
+
+    <declare-styleable name="CircleCountBar">
+        <attr name="CCBSolidColor" format="color"/>
+        <attr name="CCBStrokeColor" format="color"/>
+        <attr name="CCBStrokeWidth" format="dimension"/>
+        <attr name="CCBRadius" format="dimension"/>
+        <attr name="CCBSmallSolidColor" format="color"/>
+        <attr name="CCBSmallStrokeColor" format="color"/>
+        <attr name="CCBSmallStrokeWidth" format="dimension"/>
+        <attr name="CCBSmallRadius" format="dimension"/>
+        <attr name="CCBProcessColor" format="color"/>
+        <attr name="CCBProcessWidth" format="dimension"/>
+        <attr name="CCBTextColor" format="color"/>
+        <attr name="CCBTextSize" format="dimension"/>
+    </declare-styleable>
 </resources>

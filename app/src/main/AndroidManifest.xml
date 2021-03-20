@@ -30,6 +30,9 @@
             android:name=".first.TextActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
+        <activity
+            android:name=".first.GlideActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
             android:name=".fourth.VideoActivity"
@@ -37,6 +40,10 @@
 
         <activity
             android:name=".fourth.recyclerview.RecyclerViewActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".fifth.customview.CustomViewActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
     </application>

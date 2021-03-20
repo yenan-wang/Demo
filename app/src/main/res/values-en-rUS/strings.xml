@@ -14,7 +14,9 @@
 
     <string name="button_1_2">Jump to the System Page</string>
 
-    <string name="button_1_3">Take the Test</string>
+    <!--GlideActivity-->
+    <string name="button_1_3">Glide Demo</string>
+    <string name="load_network_image">Load Network Image</string>
 
     <string name="button_2_1">SharedPreferences</string>
 
