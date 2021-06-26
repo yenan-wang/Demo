@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.demo.R;
-import com.ngb.common.ui.Circle;
+import com.ngb.common.ui.basics.Circle;
 
 public class CustomViewFragment extends Fragment {
     private Circle mCircle;

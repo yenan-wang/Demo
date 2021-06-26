@@ -1,4 +1,4 @@
-package com.ngb.common.ui;
+package com.ngb.common.ui.basics;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -33,6 +33,7 @@ public class Circle extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        canvas.drawCircle(200, 200, 150, mPaint);
     }
 
     public void setPaintColor(@ColorInt int color) {

@@ -42,9 +42,9 @@ public class CustomViewActivity extends BaseCommonActivity {
         mTabNameList.add("……");
 
         mFragmentsList = new ArrayList<>();
-        for (int i = 0; i < mTabNameList.size(); i++) {
-            mFragmentsList.add(new CustomViewFragment());
-        }
+        mFragmentsList.add(new CustomViewFragment());
+        mFragmentsList.add(new CustomViewFragment());
+        mFragmentsList.add(new CustomViewMoreFragment());
     }
 
     private void initView() {
