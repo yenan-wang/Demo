@@ -19,11 +19,15 @@
     <string name="button_1_3">Glide示例</string>
     <string name="load_network_image">加载网络图片</string>
 
-    <string name="button_2_1">桌面小部件开发示例</string>
+    <string name="button_2_1">SharedPreferences</string>
 
     <string name="button_2_2">SQLite演示</string>
 
-    <string name="button_2_3">唤起三方应用</string>
+    <string name="button_2_3">通知栏消息</string>
+    <string name="common_message">普通式消息通知</string>
+    <string name="fold_message">折叠式消息通知</string>
+    <string name="suspend_message">悬挂式消息通知</string>
+    <string name="click_to_my_CSDN_blog">点击前往我的CSDN博客主页</string>
 
     <string name="button_3_1">ContentProvider</string>
 

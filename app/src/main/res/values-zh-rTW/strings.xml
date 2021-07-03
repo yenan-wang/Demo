@@ -23,7 +23,11 @@
 
     <string name="button_2_2">SQLite演示</string>
 
-    <string name="button_2_3">喚起三方應用</string>
+    <string name="button_2_3">通知欄消息</string>
+    <string name="common_message">普通式消息通知</string>
+    <string name="fold_message">折疊式消息通知</string>
+    <string name="suspend_message">懸掛式消息通知</string>
+    <string name="click_to_my_CSDN_blog">點擊前往我的CSDN博客主頁</string>
 
     <string name="button_3_1">ContentProvider</string>
 

@@ -24,7 +24,11 @@
 
     <string name="button_2_2">SQLite Demo</string>
 
-    <string name="button_2_3">Evoke Tripartite Apps</string>
+    <string name="button_2_3">Notification bar message</string>
+    <string name="common_message">Normal message notification</string>
+    <string name="fold_message">Folded message notification</string>
+    <string name="suspend_message">Hanging message notification</string>
+    <string name="click_to_my_CSDN_blog">Click to go to my CSDN blog homepage</string>
 
     <string name="button_3_1">ContentProvider</string>
 
