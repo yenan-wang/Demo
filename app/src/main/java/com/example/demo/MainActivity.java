@@ -11,6 +11,7 @@ import com.example.demo.first.TextActivity;
 import com.example.demo.fourth.VideoActivity;
 import com.example.demo.fourth.recyclerview.RecyclerViewActivity;
 import com.example.demo.second.NotificationActivity;
+import com.example.demo.second.clicktouch.ClickEventAndDispatchActivity;
 import com.ngb.common.BaseCommonActivity;
 import com.ngb.common.ui.CommonButton;
 
@@ -69,7 +70,7 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_1_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_1_3), GlideActivity.class);
 
-        buttonNameList.put(getString(R.string.button_2_1), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_2_1), ClickEventAndDispatchActivity.class);
         buttonNameList.put(getString(R.string.button_2_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_2_3), NotificationActivity.class);
 /*

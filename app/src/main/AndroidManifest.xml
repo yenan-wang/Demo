@@ -35,6 +35,14 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
+            android:name=".second.clicktouch.ClickEventAndDispatchActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".second.widget.DeskTopWidgetActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
             android:name=".second.NotificationActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
@@ -50,7 +58,7 @@
             android:name=".fifth.customview.CustomViewActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <receiver android:name=".second.DeskTopWidget">
+        <receiver android:name=".second.widget.DeskTopWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
