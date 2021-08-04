@@ -8,11 +8,17 @@ import android.content.pm.PackageManager;
 import android.text.TextUtils;
 
 import com.ngb.common.BaseApplication;
+import com.ngb.common.BuildConfig;
 
 import java.util.List;
 
 public class AppUtil {
     private static final String TAG = AppUtil.class.getSimpleName();
+    private static final boolean sIsRunAlone = BuildConfig.IS_RUN_ALONE;
+
+    public static boolean isIsRunAlone() {
+        return sIsRunAlone;
+    }
 
     public static Context getContext() {
         return BaseApplication.getContext();

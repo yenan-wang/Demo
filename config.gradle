@@ -1,0 +1,32 @@
+def GLIDE_VERSION = "4.11.0"
+ext {
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 28,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    configSwitch = [
+            isRunAlone: false
+    ]
+
+    dependencies = [
+            publicImplementation: [
+                    'androidx.appcompat:appcompat:1.2.0',
+                    'androidx.constraintlayout:constraintlayout:2.0.4',
+                    'androidx.recyclerview:recyclerview:1.1.0',
+                    'androidx.cardview:cardview:1.0.0',
+                    'com.google.android.material:material:1.2.1'
+            ],
+            commonImplementation: [
+                    "com.zlc.glide:webpdecoder:2.0.${GLIDE_VERSION}",
+                    "com.github.bumptech.glide:glide:${GLIDE_VERSION}"
+            ],
+            annotationProcessor : [
+                    "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+            ]
+    ]
+}

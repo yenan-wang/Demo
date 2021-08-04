@@ -1,17 +1,24 @@
-apply plugin: 'com.android.library'
+if (rootProject.ext.configSwitch.isRunAlone) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     defaultConfig {
+        if (rootProject.ext.configSwitch.isRunAlone) {
+            applicationId "com.ngb.network"
+        }
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -25,15 +32,24 @@ android {
             buildConfigField('boolean', 'IS_RUN_ALONE', rootProject.ext.configSwitch.isRunAlone.toString())
         }
     }
+
+    sourceSets {
+        main {
+            if (rootProject.ext.configSwitch.isRunAlone) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java.srcDir 'src/main/module'
+            } else {
+                manifest.srcFile 'src/manifest/AndroidManifest.xml'
+            }
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    api rootProject.ext.dependencies.publicImplementation
-    implementation rootProject.ext.dependencies.commonImplementation
-    annotationProcessor rootProject.ext.dependencies.annotationProcessor
-
+    api project(":common")
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
 }
