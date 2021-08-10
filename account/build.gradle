@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    apply plugin: "maven"
+    task generateAccountApiJar(type: Jar) {
+        println("generate account api jar...")
+        archivesBaseName = "account-api"
+        version("1.0.0")
+        archiveExtension = "jar"
+
+        if (rootProject.ext.android.isRunAlone) {
+            android.applicationVariants.all {
+                variant -> from(variant.javaCompileProvider.get().destinationDir.getPath())
+            }
+        } else {
+            android.libraryVariants.all {
+                variant -> from(variant.javaCompileProvider.get().destinationDir.getPath())
+            }
+        }
+
+        include('com/ngb/account/_api/**')
+        include('com/ngb/account/pojo/**')
+        destinationDirectory = file('build/_api')
+    }
+    artifacts {
+        archives(generateAccountApiJar) {
+            name = "account_api"
+        }
+    }
+
+    uploadArchives {
+        println("uploading account api jar...")
+        repositories {
+            mavenDeployer {
+                repository(url: uri('../repo'))
+
+                addFilter('account_api') { artifact, file ->
+                    artifact.name == 'account_api'
+                }
+
+                pom('account_api').groupId = 'com.ngb.account'
+                pom('account_api').artifactId = 'account-api'
+                pom('account_api').version = '1.0.0'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(path: ":common")
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+}

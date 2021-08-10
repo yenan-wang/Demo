@@ -73,8 +73,9 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_2_1), ClickEventAndDispatchActivity.class);
         buttonNameList.put(getString(R.string.button_2_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_2_3), NotificationActivity.class);
+
+        buttonNameList.put(getString(R.string.button_3_1), DemoActivity.class);
 /*
-        buttonNameList.put(getString(R.string.button_3_1), TextActivity.class);
         buttonNameList.put(getString(R.string.button_3_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_3_3), TextActivity.class);
 
