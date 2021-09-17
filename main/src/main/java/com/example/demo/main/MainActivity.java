@@ -13,9 +13,9 @@ import com.example.demo.main.fourth.VideoActivity;
 import com.example.demo.main.fourth.recyclerview.RecyclerViewActivity;
 import com.example.demo.main.second.NotificationActivity;
 import com.example.demo.main.second.clicktouch.ClickEventAndDispatchActivity;
-import com.ngb.common.BaseCommonActivity;
-import com.ngb.common.ui.CommonButton;
-import com.ngb.network.WebViewActivity;
+import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.ui.CommonButton;
+import com.example.demo.network.WebViewActivity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

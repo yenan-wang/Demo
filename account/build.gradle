@@ -38,8 +38,8 @@ android {
             }
         }
 
-        include('com/ngb/account/_api/**')
-        include('com/ngb/account/pojo/**')
+        include('com/example/demo/account/_api/**')
+        include('com/example/demo/account/_pojo/**')
         destinationDirectory = file('build/_api')
     }
     artifacts {
@@ -58,7 +58,7 @@ android {
                     artifact.name == 'account_api'
                 }
 
-                pom('account_api').groupId = 'com.ngb.account'
+                pom('account_api').groupId = 'com.example.demo.account'
                 pom('account_api').artifactId = 'account-api'
                 pom('account_api').version = '1.0.0'
             }

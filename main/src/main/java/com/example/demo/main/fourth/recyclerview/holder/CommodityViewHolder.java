@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 
 import com.example.demo.main.R;
 import com.example.demo.main.fourth.recyclerview.data.CommodityVO;
-import com.ngb.common.utils.ToastUtil;
+import com.example.demo.common.utils.ToastUtil;
 
 public class CommodityViewHolder extends DemoBaseRecyclerViewHolder<CommodityVO> {
     private ImageView mCoverImage;

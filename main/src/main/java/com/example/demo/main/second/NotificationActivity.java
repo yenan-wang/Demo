@@ -16,10 +16,10 @@ import androidx.core.app.NotificationCompat;
 
 import com.example.demo.main.MainActivity;
 import com.example.demo.main.R;
-import com.ngb.common.BaseCommonActivity;
-import com.ngb.common.CommonConstants;
-import com.ngb.common.ui.CommonButton;
-import com.ngb.common.utils.ToastUtil;
+import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.CommonConstants;
+import com.example.demo.common.ui.CommonButton;
+import com.example.demo.common.utils.ToastUtil;
 
 public class NotificationActivity extends BaseCommonActivity implements View.OnClickListener {
     private static final String CHANNEL_ID_COMMON_MESSAGE = "common_message";

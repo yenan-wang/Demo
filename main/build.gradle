@@ -38,7 +38,7 @@ dependencies {
     implementation project(":common")
     implementation project(":network")
     implementation project(":aidl")
-    implementation 'com.ngb.account:account-api:1.0.0@jar'
+    implementation 'com.example.demo.account:account-api:1.0.0@jar'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

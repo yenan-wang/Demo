@@ -14,7 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.demo.main.R;
 import com.google.android.material.tabs.TabLayout;
-import com.ngb.common.BaseCommonActivity;
+import com.example.demo.common.BaseCommonActivity;
 
 import java.util.ArrayList;
 import java.util.List;

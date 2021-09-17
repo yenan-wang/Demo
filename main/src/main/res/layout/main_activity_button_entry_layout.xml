@@ -13,7 +13,7 @@
 
         <TableRow>
 
-            <com.ngb.common.ui.CommonButton
+            <com.example.demo.common.ui.CommonButton
                 android:id="@+id/button_1_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

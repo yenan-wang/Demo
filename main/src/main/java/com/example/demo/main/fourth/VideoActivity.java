@@ -9,7 +9,7 @@ import android.widget.VideoView;
 import androidx.annotation.Nullable;
 
 import com.example.demo.main.R;
-import com.ngb.common.BaseCommonActivity;
+import com.example.demo.common.BaseCommonActivity;
 
 public class VideoActivity extends BaseCommonActivity {
     private VideoView mVideoView;

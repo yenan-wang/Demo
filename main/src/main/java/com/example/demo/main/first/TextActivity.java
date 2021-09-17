@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 
 import com.example.demo.main.R;
-import com.ngb.common.BaseCommonActivity;
+import com.example.demo.common.BaseCommonActivity;
 
 public class TextActivity extends BaseCommonActivity {
 

@@ -10,8 +10,8 @@ import android.widget.Spinner;
 import androidx.annotation.Nullable;
 
 import com.example.demo.main.R;
-import com.ngb.common.BaseApplication;
-import com.ngb.common.BaseCommonActivity;
+import com.example.demo.common.BaseApplication;
+import com.example.demo.common.BaseCommonActivity;
 
 public class ClickEventAndDispatchActivity extends BaseCommonActivity implements OnTouchEventListener {
     private String[] mSelectArray = BaseApplication.getInstance().getResources().getStringArray(R.array.touch_select_array);
