@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SplashActivity-->
+    <string name="splash_activity_welcome_text">欢迎使用%1$sAPP</string>
+
+    <!--MainActivity-->
+    <string name="main_title">点击下方按钮进入相应的示例页面</string>
+    <string name="main_summary">每个页面启动后均是一个全新的activity</string>
+
+    <!--TextActivity-->
+    <string name="button_1_1">文本显示</string>
+    <plurals name="editor_text_ms">
+        <item quantity="one">毫秒</item>
+        <item quantity="other">毫秒</item>
+    </plurals>
+    <plurals name="draft_count">
+        <item quantity="one">草稿 %d</item>
+        <item quantity="other">草稿 %d</item>
+    </plurals>
+    <plurals name="two_variable_string">
+        <item quantity="one">至少输入%1$d个字，还差%2$d个字</item>
+        <item quantity="other">至少输入%1$d个字，还差%2$d个字</item>
+    </plurals>
+
+    <string name="button_1_2">跳转系统页面</string>
+
+    <!--GlideActivity-->
+    <string name="button_1_3">Glide示例</string>
+    <string name="load_network_image">加载网络图片</string>
+
+    <string name="button_2_1">点击事件与分发示例</string>
+
+    <string name="button_2_2">SQLite演示</string>
+
+    <string name="button_2_3">通知栏消息</string>
+    <string name="common_message">普通式消息通知</string>
+    <string name="fold_message">折叠式消息通知</string>
+    <string name="suspend_message">悬挂式消息通知</string>
+    <string name="click_to_my_CSDN_blog">点击前往我的CSDN博客主页</string>
+
+    <string name="button_3_1">ContentProvider</string>
+
+    <string name="button_3_2">弹窗示例</string>
+
+    <string name="button_3_3">渐变示例</string>
+
+    <string name="button_4_1">AIDL示例</string>
+    <string name="get_book">获取书籍</string>
+    <string name="add_book">添加书籍</string>
+
+    <string name="button_4_2">视频播放示例</string>
+
+    <string name="button_4_3">RecyclerView示例</string>
+    <string name="money">￥</string>
+    <plurals name="pay_person_count">
+        <item quantity="one">%1d人已付款</item>
+        <item quantity="other">%1d人已付款</item>
+    </plurals>
+
+    <string name="button_5_1">ListView示例</string>
+
+    <string name="button_5_2">动画示例</string>
+
+    <string name="button_5_3">自定义view</string>
+
+    <string name="button_6_1">应用间数据通信</string>
+
+    <string name="button_6_2">动态tab增删</string>
+
+    <string name="button_6_3">加解密</string>
+</resources>

@@ -16,59 +16,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".DemoActivity" />
-
-        <activity
-            android:name=".first.TextActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".first.GlideActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".second.clicktouch.ClickEventAndDispatchActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".second.widget.DeskTopWidgetActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".second.NotificationActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".fourth.VideoActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".fourth.recyclerview.RecyclerViewActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".fifth.customview.CustomViewActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <receiver android:name=".second.widget.DeskTopWidget">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/example_appwidget_info" />
-        </receiver>
     </application>
 
 </manifest>

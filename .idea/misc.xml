@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1625" />
+        <entry key="..\:/AndroidStudioProjects/Demo/app/src/main/res/drawable/recycler_view_title_label_background.xml" value="0.1625" />
+        <entry key="..\:/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_aidl_layout.xml" value="0.2786458333333333" />
+        <entry key="..\:/AndroidStudioProjects/Demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1625" />
+        <entry key="..\:/AndroidStudioProjects/Demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1625" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_click_event_and_dispach_layout.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_video.xml" value="0.14635416666666667" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/common_tool_bar_layout.xml" value="0.14635416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
