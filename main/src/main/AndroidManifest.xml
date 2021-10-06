@@ -26,6 +26,11 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
+            android:name=".first.ARouterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
             android:name=".second.clicktouch.ClickEventAndDispatchActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 

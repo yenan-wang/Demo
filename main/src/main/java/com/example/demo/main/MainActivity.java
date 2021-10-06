@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.demo.main.customview.CustomViewActivity;
+import com.example.demo.main.first.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
 import com.example.demo.main.first.TextActivity;
 //import com.example.demo.main.fourth.AidlActivity;
@@ -77,10 +78,9 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_2_3), NotificationActivity.class);
 
         //buttonNameList.put(getString(R.string.button_3_1), DemoActivity.class);
-
         buttonNameList.put(getString(R.string.button_3_2), WebViewActivity.class);
- /*       buttonNameList.put(getString(R.string.button_3_3), TextActivity.class);
-*/
+        buttonNameList.put(getString(R.string.button_3_3), ARouterActivity.class);
+
         //buttonNameList.put(getString(R.string.button_4_1), AidlActivity.class);
         buttonNameList.put(getString(R.string.button_4_2), VideoActivity.class);
         buttonNameList.put(getString(R.string.button_4_3), RecyclerViewActivity.class);

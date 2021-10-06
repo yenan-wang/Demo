@@ -32,7 +32,8 @@
 
     <string name="button_3_2">Pop-up Window Demo</string>
 
-    <string name="button_3_3">Gradual Demo</string>
+    <string name="button_3_3">ARouter Demo</string>
+    <string name="click_to_page">click to jump to the page</string>
 
     <string name="button_4_1">AIDL Demo</string>
     <string name="get_book">obtain a book</string>

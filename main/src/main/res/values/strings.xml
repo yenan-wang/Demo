@@ -42,7 +42,8 @@
 
     <string name="button_3_2">弹窗示例</string>
 
-    <string name="button_3_3">渐变示例</string>
+    <string name="button_3_3">ARouter示例</string>
+    <string name="click_to_page">点击跳转页面</string>
 
     <string name="button_4_1">AIDL示例</string>
     <string name="get_book">获取书籍</string>
