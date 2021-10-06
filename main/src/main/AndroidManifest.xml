@@ -26,7 +26,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".first.ARouterActivity"
+            android:name=".third.ARouterActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
@@ -55,7 +55,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".customview.CustomViewActivity"
+            android:name=".fifth.customview.CustomViewActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <receiver android:name=".second.widget.DeskTopWidget">

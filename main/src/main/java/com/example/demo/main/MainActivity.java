@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.example.demo.main.customview.CustomViewActivity;
-import com.example.demo.main.first.ARouterActivity;
+import com.example.demo.main.fifth.customview.CustomViewActivity;
+import com.example.demo.main.third.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
 import com.example.demo.main.first.TextActivity;
 //import com.example.demo.main.fourth.AidlActivity;
