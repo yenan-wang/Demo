@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Demo</string>
 
     <!--SplashActivity-->
     <string name="splash_activity_welcome_text">welcome to use %1$s APP</string>
@@ -38,6 +37,10 @@
     <string name="button_4_1">AIDL Demo</string>
     <string name="get_book">obtain a book</string>
     <string name="add_book">add a book</string>
+    <string name="connect_fail">connection failed！</string>
+    <string name="connect_fail_tip">If the prompt "connection failed!" appears, please try to copy Book.aidl, IBookManager.aidl, Book.java and BookManagerService.java in the service module to the new project. Note that the package name of each class should not be changed; Finally, copy and paste the registration information of BookManagerService in AndroidManifest.xml, and then package it on the mobile phone. And reopen the page to try to connect.</string>
+    <string name="connect_success">connection succeed！</string>
+    <string name="disconnect">disconnect！</string>
 
     <string name="button_4_2">Video Play Demo</string>
 
@@ -49,7 +52,8 @@
         <item quantity="other">%1d people have paid</item>
     </plurals>
 
-    <string name="button_5_1">ListView Demo</string>
+    <string name="button_5_1">Retrofit &amp; RxJava Demo</string>
+    <string name="query_expressage">express check</string>
 
     <string name="button_5_2">Animation Demo</string>
 

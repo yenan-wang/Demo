@@ -1,9 +1,11 @@
-package com.example.demo.network;
+package com.example.demo.main.fifth;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
+import com.example.demo.common.ui.CommonButton;
+import com.example.demo.main.R;
+import com.example.demo.network.CommonRepository;
 import com.example.demo.network.bean.PostInfo;
 import com.example.demo.network.netservice.RetrofitService;
 import com.example.demo.common.BaseCommonActivity;
@@ -25,7 +27,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class WebViewActivity extends BaseCommonActivity {
-    private TextView mTextView;
+    private CommonButton mButton;
     //观察者
     private Subscriber<String> mSubscriber = new Subscriber<String>() {
         @Override
@@ -71,8 +73,8 @@ public class WebViewActivity extends BaseCommonActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
-        mTextView = findViewById(R.id.text_view);
-        mTextView.setOnClickListener(new View.OnClickListener() {
+        mButton = findViewById(R.id.text_view);
+        mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //boolean isRunAlone = NetWorkApplication.isIsRunAlone();

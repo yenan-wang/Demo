@@ -9,14 +9,14 @@ import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.third.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
 import com.example.demo.main.first.TextActivity;
-//import com.example.demo.main.fourth.AidlActivity;
+import com.example.demo.main.fourth.AidlActivity;
 import com.example.demo.main.fourth.VideoActivity;
 import com.example.demo.main.fourth.recyclerview.RecyclerViewActivity;
 import com.example.demo.main.second.NotificationActivity;
 import com.example.demo.main.second.clicktouch.ClickEventAndDispatchActivity;
 import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.common.ui.CommonButton;
-import com.example.demo.network.WebViewActivity;
+import com.example.demo.main.fifth.WebViewActivity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -81,11 +81,12 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_3_2), WebViewActivity.class);
         buttonNameList.put(getString(R.string.button_3_3), ARouterActivity.class);
 
-        //buttonNameList.put(getString(R.string.button_4_1), AidlActivity.class);
+        buttonNameList.put(getString(R.string.button_4_1), AidlActivity.class);
         buttonNameList.put(getString(R.string.button_4_2), VideoActivity.class);
         buttonNameList.put(getString(R.string.button_4_3), RecyclerViewActivity.class);
-/*
-        buttonNameList.put(getString(R.string.button_5_1), TextActivity.class);
+
+        buttonNameList.put(getString(R.string.button_5_1), WebViewActivity.class);
+        /*
         buttonNameList.put(getString(R.string.button_5_2), TextActivity.class);
         */
         buttonNameList.put(getString(R.string.button_5_3), CustomViewActivity.class);

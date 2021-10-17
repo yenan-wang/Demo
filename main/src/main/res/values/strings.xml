@@ -48,6 +48,10 @@
     <string name="button_4_1">AIDL示例</string>
     <string name="get_book">获取书籍</string>
     <string name="add_book">添加书籍</string>
+    <string name="connect_fail">连接失败！</string>
+    <string name="connect_fail_tip">如果出现“连接失败！”的提示，请尝试将service模块中Book.aidl、IBookManager.aidl、Book.java、BookManagerService.java整体复制到新工程里，注意每个类的包名不要改变；最后将BookManagerService在AndroidManifest.xml中的注册信息一并复制粘贴去，然后打包装在手机上。并重新打开页面尝试连接。</string>
+    <string name="connect_success">连接成功！</string>
+    <string name="disconnect">断开连接！</string>
 
     <string name="button_4_2">视频播放示例</string>
 
@@ -58,7 +62,8 @@
         <item quantity="other">%1d人已付款</item>
     </plurals>
 
-    <string name="button_5_1">ListView示例</string>
+    <string name="button_5_1">Retrofit和RxJava示例</string>
+    <string name="query_expressage">查询快递</string>
 
     <string name="button_5_2">动画示例</string>
 
