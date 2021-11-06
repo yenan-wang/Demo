@@ -1,0 +1,49 @@
+package com.example.demo.main.fifth.ballslide;
+
+import android.os.Bundle;
+import android.text.InputType;
+import android.view.View;
+import android.widget.EditText;
+
+import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.ui.CommonButton;
+import com.example.demo.common.utils.ToastUtil;
+import com.example.demo.main.R;
+
+public class BallSlidingActivity extends BaseCommonActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ball_sliding);
+        initView();
+    }
+
+    private void initView() {
+        EditText textView = findViewById(R.id.angel_text);
+        textView.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+        RunBall runBall = findViewById(R.id.run_ball);
+        CommonButton setAngel = findViewById(R.id.set_angel);
+        setAngel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                double angel = RunBall.DEFAULT_ANGEL;
+                try {
+                    angel = Double.parseDouble(textView.getText().toString());
+                } catch (NumberFormatException e) {
+                    ToastUtil.toastLong("请输入正确的角度数！");
+                }
+                runBall.setAngel(angel);
+            }
+        });
+
+        CommonButton button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                runBall.moveBack();
+            }
+        });
+    }
+
+}

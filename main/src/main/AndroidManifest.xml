@@ -4,6 +4,10 @@
 
     <application>
         <activity
+            android:name=".fifth.ballslide.BallSlidingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>

@@ -21,4 +21,10 @@
         <attr name="CCBTextColor" format="color"/>
         <attr name="CCBTextSize" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="HPBBackgroundColor" format="color"/>
+        <attr name="HPBProgressColor" format="color"/>
+        <attr name="HPBTextColor" format="color"/>
+    </declare-styleable>
 </resources>

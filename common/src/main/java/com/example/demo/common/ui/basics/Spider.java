@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -80,8 +79,6 @@ public class Spider extends View {
         //canvas.drawPoint(mCenterX, mCenterY, mRadarPaint);
         mPath.moveTo(mCenterX, mCenterY);
         //mRadarPaint.setStrokeWidth(5);
-        Log.d("ngb_log", "mCenterX:" + mCenterX + ", mCenterY:" + mCenterY);
-        Log.d("ngb_log", "r:" + mRadius);
         for (int i = 1; i <= 6; i++) {
             float curR = r * i;
             mPath.reset();
@@ -92,7 +89,6 @@ public class Spider extends View {
                     float x = (float) (mCenterX + curR * Math.cos(Math.toRadians(mAngle) * j));
                     float y = (float) (mCenterY + curR * Math.sin(Math.toRadians(mAngle) * j));
                     mPath.lineTo(x, y);
-                    Log.d("ngb_log", "x:" + x + ", y:" + y);
                 }
             }
             mPath.close();

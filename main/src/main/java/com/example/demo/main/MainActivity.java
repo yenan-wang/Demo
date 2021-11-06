@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.third.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
@@ -86,9 +87,7 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_4_3), RecyclerViewActivity.class);
 
         buttonNameList.put(getString(R.string.button_5_1), WebViewActivity.class);
-        /*
-        buttonNameList.put(getString(R.string.button_5_2), TextActivity.class);
-        */
+        buttonNameList.put(getString(R.string.button_5_2), BallSlidingActivity.class);
         buttonNameList.put(getString(R.string.button_5_3), CustomViewActivity.class);
 /*
         buttonNameList.put(getString(R.string.button_6_1), TextActivity.class);

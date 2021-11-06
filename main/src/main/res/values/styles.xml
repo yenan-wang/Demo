@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Ball">
+        <attr name="ballRadius" format="dimension|reference" />
+        <attr name="ballAlpha" format="integer" />
+    </declare-styleable>
+</resources>

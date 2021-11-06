@@ -40,11 +40,13 @@ public class CustomViewActivity extends BaseCommonActivity {
         mTabNameList.add("基础图形");
         mTabNameList.add("基础二维图形");
         mTabNameList.add("……");
+        mTabNameList.add("进度条");
 
         mFragmentsList = new ArrayList<>();
         mFragmentsList.add(new CustomViewFragment());
         mFragmentsList.add(new CustomViewFragment());
         mFragmentsList.add(new CustomViewMoreFragment());
+        mFragmentsList.add(new CustomViewProgressFragment());
     }
 
     private void initView() {
