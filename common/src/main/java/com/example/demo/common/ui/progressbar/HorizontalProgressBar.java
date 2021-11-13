@@ -34,8 +34,7 @@ public class HorizontalProgressBar extends View {
     private RectF mProgressRectF;
     private Path mBackgroundPath;
     private float mProgress;
-    private boolean mIsPause = false;
-    private DecimalFormat mFormat = new DecimalFormat("#.00");
+    private DecimalFormat mFormat = new DecimalFormat("#.##");
     private Xfermode mXfermode = new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP);
 
     private OnProcessStatusListener mOnProcessStatusListener;
@@ -102,17 +101,6 @@ public class HorizontalProgressBar extends View {
         mOnProcessStatusListener = onProcessStatusListener;
     }
 
-    public boolean isPause() {
-        return mIsPause;
-    }
-
-    public void setPause(boolean pause) {
-        mIsPause = pause;
-        if (mOnProcessStatusListener != null) {
-            mOnProcessStatusListener.pauseStatus(mIsPause, mProgress);
-        }
-    }
-
     private void initPaint() {
         setClickable(true);
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
@@ -166,22 +154,14 @@ public class HorizontalProgressBar extends View {
 
         //画文字
         //控制进度在0-1之间
-        if (mProgress < 0) {
-            mProgress = 0;
+        if (mProgress < 0F) {
+            mProgress = 0F;
         }
-        if (mProgress > 1) {
-            mProgress = 1;
+        if (mProgress > 1F) {
+            mProgress = 1F;
         }
         //显示百分比时的格式化
         String s = mFormat.format(mProgress * 100);
-        //初始化为异常情况默认为0
-        if (TextUtils.isEmpty(s) || s.equals(".00")) {
-            s = "0";
-        }
-        //如果恰好是个整值，即小数部分都是0，那么就只显示整数部分
-        else if (s.endsWith(".00")) {
-            s = s.substring(0, s.length() - 3);
-        }
         //根据宽自适应字号大小
         mTextPaint.setTextSize(width / 4F);
 
@@ -213,30 +193,7 @@ public class HorizontalProgressBar extends View {
         setMeasuredDimension(width, height);
     }
 
-    @Override
-    public boolean performClick() {
-        LogUtil.d("mispause:" + mIsPause);
-        if (mOnProcessStatusListener != null) {
-            if (mIsPause) {
-                mIsPause = false;
-                mOnProcessStatusListener.pauseStatus(false, mProgress);
-            } else {
-                if (mProgress > 0 && mProgress < PROGRESS_COMPILE) {
-                    mIsPause = true;
-                    mOnProcessStatusListener.pauseStatus(true, mProgress);
-                }
-                if (mProgress == 0) {
-                    mIsPause = false;
-                    mOnProcessStatusListener.pauseStatus(false, 0);
-                }
-            }
-        }
-        return super.performClick();
-    }
-
     public interface OnProcessStatusListener {
-
-        void pauseStatus(boolean isPause, float process);
 
         void complete();
 
