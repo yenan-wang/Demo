@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 
 import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
+import com.example.demo.main.second.viewpager2.ViewPager2Activity;
 import com.example.demo.main.third.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
 import com.example.demo.main.first.TextActivity;
@@ -75,7 +76,7 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_1_3), GlideActivity.class);
 
         buttonNameList.put(getString(R.string.button_2_1), ClickEventAndDispatchActivity.class);
-        buttonNameList.put(getString(R.string.button_2_2), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_2_2), ViewPager2Activity.class);
         buttonNameList.put(getString(R.string.button_2_3), NotificationActivity.class);
 
         //buttonNameList.put(getString(R.string.button_3_1), DemoActivity.class);

@@ -19,7 +19,7 @@
 
     <string name="button_2_1">點擊事件與分發示例</string>
 
-    <string name="button_2_2">SQLite演示</string>
+    <string name="button_2_2">ViewPager2演示</string>
 
     <string name="button_2_3">通知欄消息</string>
     <string name="common_message">普通式消息通知</string>

@@ -1,5 +1,8 @@
 package com.example.demo.network.net;
 
+import com.example.demo.network.interceptor.HeaderIntercept;
+import com.example.demo.network.interceptor.NetInterceptor;
+
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -25,7 +28,8 @@ public class WebFactory {
                 .writeTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
 
         //添加各种拦截器
-        //okHttpBuilder.addInterceptor();
+        okHttpBuilder.addInterceptor(new HeaderIntercept());
+        okHttpBuilder.addInterceptor(new NetInterceptor());
 
         OkHttpClient okHttpClient = okHttpBuilder.build();
         mRetrofit = new Retrofit.Builder()

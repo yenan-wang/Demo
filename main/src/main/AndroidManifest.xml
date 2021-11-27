@@ -39,6 +39,10 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
+            android:name=".second.viewpager2.ViewPager2Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
             android:name=".second.NotificationActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
@@ -68,4 +72,5 @@
                 android:resource="@xml/example_appwidget_info" />
         </receiver>
     </application>
+
 </manifest>

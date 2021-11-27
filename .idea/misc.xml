@@ -9,17 +9,25 @@
         <entry key="..\:/AndroidStudioProjects/Demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1625" />
         <entry key="..\:/AndroidStudioProjects/Demo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1625" />
         <entry key="..\:/AndroidStudioProjects/Demo/business/src/main/res/layout/activity_business.xml" value="0.4033613316075515" />
+        <entry key="..\:/AndroidStudioProjects/Demo/common/src/main/res/layout/common_text_view_layout.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Demo/common/src/main/res/layout/common_tool_bar_layout.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_arouter.xml" value="0.13177083333333334" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_ball_sliding.xml" value="0.15327730601086959" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_click_event_and_dispach_layout.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_demo_view.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_recycler_view.xml" value="0.26403985507246375" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_text_layout.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_video.xml" value="0.14635416666666667" />
-        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_web_view.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/activity_web_view.xml" value="0.6050419974113272" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/common_tool_bar_layout.xml" value="0.14635416666666667" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/custom_fragment_component_layout.xml" value="0.17708333333333334" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/custom_fragment_layout.xml" value="0.4033613316075515" />
         <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/custom_fragment_progress_layout.xml" value="0.17708333333333334" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/desktop_widget_layout.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/my_app_widget.xml" value="0.6050419974113272" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/search_fragment.xml" value="0.26403985507246375" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/view_pager2_activity.xml" value="0.26403985507246375" />
+        <entry key="..\:/AndroidStudioProjects/Demo/main/src/main/res/layout/view_pager_one_fragment.xml" value="0.11302083333333333" />
         <entry key="..\:/AndroidStudioProjects/Demo/service/src/main/res/layout/activity_service_layout.xml" value="0.1" />
       </map>
     </option>

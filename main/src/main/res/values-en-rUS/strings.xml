@@ -19,7 +19,7 @@
 
     <string name="button_2_1">Click Event and Distribution Example</string>
 
-    <string name="button_2_2">SQLite Demo</string>
+    <string name="button_2_2">ViewPager2 Demo</string>
 
     <string name="button_2_3">Notification bar message</string>
     <string name="common_message">Normal message notification</string>

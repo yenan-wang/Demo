@@ -1,4 +1,4 @@
-package com.example.demo.network;
+package com.example.demo.network.netservice;
 
 import com.example.demo.network.bean.PostInfo;
 import com.example.demo.network.net.WebFactory;
