@@ -8,15 +8,18 @@ import android.widget.Filterable;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class OneFragmentAdapter extends RecyclerView.Adapter<OneFragmentViewHolder> implements Filterable {
 
     private List<TextData> mTextDataList = new ArrayList<>();
     private List<TextData> mFilterDataList = new ArrayList<>();
+    private boolean mIsSearch = false;
 
     @NonNull
     @Override
@@ -26,12 +29,12 @@ public class OneFragmentAdapter extends RecyclerView.Adapter<OneFragmentViewHold
 
     @Override
     public void onBindViewHolder(@NonNull OneFragmentViewHolder holder, int position) {
-        holder.bindData(mTextDataList.get(position), position);
+        holder.bindData(mIsSearch ? mFilterDataList.get(position) : mTextDataList.get(position), position);
     }
 
     @Override
     public int getItemCount() {
-        return mTextDataList.size();
+        return mIsSearch ? mFilterDataList.size() : mTextDataList.size();
     }
 
     public void addData(TextData data) {
@@ -47,17 +50,48 @@ public class OneFragmentAdapter extends RecyclerView.Adapter<OneFragmentViewHold
 
     @Override
     public Filter getFilter() {
-        /*return new Filter() {
+        return new Filter() {
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
+                FilterResults filterResults = new FilterResults();
                 String charString = constraint.toString();
+                if (charString.isEmpty()) {
+                    mIsSearch = false;
+                    filterResults.values = mTextDataList;
+                    mFilterDataList.clear();
+                    return filterResults;
+                } else {
+                    if (!mIsSearch) {
+                        mFilterDataList = mTextDataList;
+                        mIsSearch = true;
+                    }
+                }
+
+                List<TextData> filterList = new ArrayList<>();
+                ListIterator<TextData> iterator = mTextDataList.listIterator();
+                while (iterator.hasNext()) {
+                    TextData data = iterator.next();
+                    if (data.mText.contains(charString)) {
+                        filterList.add(data);
+                    }
+                }
+                mFilterDataList = filterList;
+                filterResults.values = mFilterDataList;
+                return filterResults;
             }
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
+                List<TextData> list = (List<TextData>) results.values;
+                if (list.isEmpty()) {
+                    ToastUtil.toastLong("无搜索结果");
+                    notifyItemRangeChanged(0, mTextDataList.size());
+                } else {
+                    notifyDataSetChanged();
+                }
 
             }
-        };*/
-        return null;
+        };
+        //return null;
     }
 }
