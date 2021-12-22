@@ -1,0 +1,83 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+project.ext {
+    groupId = "com.example.demo.${project.name}"
+    artifactId = project.artifacts
+    pluginArtifactId = "network-tool-plugin"
+    releaseVersion = "1.0.0.0"
+    snapshotVersion = "1.0.0.0-SNAPSHOT"
+    validBranch = "^(?:(.*stable|.*master|.*release).*)\$"
+    masterBranch = "^(?:(.*master).*)\$"
+    currentBranch = "git symbolic-ref --short -q HEAD".execute().text.trim()
+    devBranch = "dev/ngb"
+}
+
+def getPublishType() {
+    def publishType = PUBLISH_TYPE
+    if (publishType != "snapshot" && publishType != "release") {
+        if (currentBranch ==~ masterBranch) {
+            publishType = "snapshot"
+        } else {
+            publishType = "release"
+        }
+    }
+    return "${publishType}"
+}
+
+def isBuildOnWindows() {
+    return Os.isFamily(Os.FAMILY_WINDOWS)
+}
+
+def getPublishTarget() {
+    def publishTarget = PUBLISH_TARGET
+    if (publishTarget == "local") {
+        if (isBuildOnWindows()) {
+            publishTarget = "local"
+            return "${publishTarget}"
+        }
+    }
+    publishTarget = "remote"
+    return "${publishTarget}"
+}
+
+def getPublishUrl() {
+    def publishType = getPublishType()
+    def publishTarget = getPublishTarget()
+    def mavenUrl = ""
+    if (publishTarget == "remote") {
+        //if ((publishTarget == "remote") && System.getenv("MAVEN_USER") && System.getenv("MAVEN_PASSWORD") && (currentBranch ==~ validBranch || currentBranch ==~ devBranch)) {
+        if (publishType == "release") {
+            mavenUrl = "http://mavenUrlRelease"
+        } else {
+            mavenUrl = "http://mavenUrlSnapshot"
+        }
+    } else {
+        mavenUrl = uri("../repo")
+    }
+    return "${mavenUrl}"
+}
+
+def getPublishVersion() {
+    def publishType = getPublishType()
+    def publishTarget = getPublishTarget()
+
+    def publishVersion = ""
+    if (publishTarget == "remote") {
+        if (publishType == "release") {
+            publishVersion = "$releaseVersion"
+        } else {
+            publishVersion = "$snapshotVersion"
+        }
+    } else {
+        publishVersion = "0.0.1-LOCAL"
+    }
+    return "${publishVersion}"
+}
+
+ext {
+    getPublishType = this.&getPublishType
+    isBuildOnWindows = this.&isBuildOnWindows
+    getPublishTarget = this.&getPublishTarget
+    getPublishVersion = this.&getPublishVersion
+    getPublishUrl = this.&getPublishUrl
+}

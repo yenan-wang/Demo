@@ -1,0 +1,75 @@
+plugins {
+    //id "maven-publish"
+    id "maven"
+    id "groovy"
+}
+apply from: "${rootProject.projectDir.absolutePath}/publish_version.gradle"
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+def mavenUrl = getPublishUrl()
+def publishVersion = getPublishVersion()
+
+//加入源码
+/*project.tasks.create(name: "sourcePlugin", type: Jar) {
+    archiveClassifier.set("sources")
+    from project.sourceSets
+}
+project.artifacts.archives project.sourcePlugin*/
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            println("publish versionId = $publishVersion, url = $mavenUrl")
+            repository(url: "$mavenUrl") {
+                authentication(userName: System.getenv("MAVEN_USER"), password: System.getenv("MAVEN_PASSWORD"))
+            }
+            pom.project {
+                groupId groupId
+                artifactId pluginArtifactId
+                version publishVersion
+                packaging "aar"
+            }
+            pom.whenConfigured { pom ->
+                pom.dependencies.findAll { dep -> dep.groupId == rootProject.name }
+                        .collect { dep ->
+                            dep.groupId = pom.groupId = groupId
+                            dep.version = pom.version = publishVersion
+                        }
+            }
+        }
+        doLast {
+            println("publish end: $groupId:$pluginArtifactId:$publishVersion")
+            println("publish url: $mavenUrl")
+        }
+    }
+}
+/*publishing {
+    publications {
+        demoPlugin(MavenPublication) {
+            from components.java
+            group("com.example.demo.plugin")
+            artifactId("network-tools")
+            version("1.0.0")
+        }
+    }
+
+    repositories {
+        maven { url uri("../repo") }
+    }
+}*/
+
+dependencies {
+    implementation "org.ow2.asm:asm:9.1"
+    implementation "org.ow2.asm:asm-commons:9.1"
+    implementation "com.android.tools.build:gradle:4.0.2"
+
+}
+
+compileGroovy {
+    dependsOn tasks.getByPath("compileJava")
+    classpath += files(compileJava.destinationDir)
+}

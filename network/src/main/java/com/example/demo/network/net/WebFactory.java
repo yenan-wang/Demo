@@ -29,7 +29,7 @@ public class WebFactory {
 
         //添加各种拦截器
         okHttpBuilder.addInterceptor(new HeaderIntercept());
-        okHttpBuilder.addInterceptor(new NetInterceptor());
+        //okHttpBuilder.addInterceptor(new NetInterceptor());
 
         OkHttpClient okHttpClient = okHttpBuilder.build();
         mRetrofit = new Retrofit.Builder()

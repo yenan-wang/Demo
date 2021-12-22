@@ -26,6 +26,7 @@ public class HeaderIntercept implements Interceptor {
                 .addHeader(HEAD_ANDROID_VERSION, "10")
                 .build();
         LogUtil.d(request.headers());
+        LogUtil.d("测试，加interceptor。");
         return chain.proceed(request);
     }
 }

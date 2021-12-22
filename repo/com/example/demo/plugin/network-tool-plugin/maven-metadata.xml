@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.example.demo.plugin</groupId>
+  <artifactId>network-tool-plugin</artifactId>
+  <versioning>
+    <release>0.0.1-LOCAL</release>
+    <versions>
+      <version>0.0.1-LOCAL</version>
+    </versions>
+    <lastUpdated>20211220153956</lastUpdated>
+  </versioning>
+</metadata>

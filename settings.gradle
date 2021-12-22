@@ -7,3 +7,4 @@ rootProject.name = "Demo"
 include ':main'
 include ':service'
 include ':business'
+include ':plugin'
