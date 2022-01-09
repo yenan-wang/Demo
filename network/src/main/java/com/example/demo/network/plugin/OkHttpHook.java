@@ -32,6 +32,15 @@ public class OkHttpHook {
     }
 
     public void addInterceptor(OkHttpClient client) {
+        dealInterceptor(client);
+    }
+
+    public OkHttpClient addInterceptorWithReturn(OkHttpClient client) {
+        dealInterceptor(client);
+        return client;
+    }
+
+    private void dealInterceptor(OkHttpClient client) {
         LogUtil.d(TAG, "OkHttpHook addInterceptor.");
         List<Interceptor> interceptors = new ArrayList<>(client.interceptors());
         List<Interceptor> networkInterceptors = new ArrayList<>(client.networkInterceptors());

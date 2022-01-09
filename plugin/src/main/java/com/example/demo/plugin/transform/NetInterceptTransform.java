@@ -11,6 +11,7 @@ import com.android.build.api.transform.TransformException;
 import com.android.build.api.transform.TransformInput;
 import com.android.build.api.transform.TransformInvocation;
 import com.android.build.api.transform.TransformOutputProvider;
+import com.android.build.api.variant.VariantInfo;
 import com.android.build.gradle.AppExtension;
 import com.android.build.gradle.internal.pipeline.TransformManager;
 import com.android.utils.FileUtils;
@@ -54,6 +55,16 @@ public class NetInterceptTransform extends Transform implements Plugin<Project> 
         } else {
             println(Constants.PLUGIN_TAG + "/" + "release task!");
         }
+    }
+
+    @Override
+    public boolean applyToVariant(VariantInfo variant) {
+        if (variant == null) {
+            return false;
+        }
+        boolean isApply = variant.isDebuggable() && (!variant.getBuildTypeName().contains("release") || !variant.getBuildTypeName().contains("Release"));
+        println(Constants.PLUGIN_TAG + "/" + "applyToVariant: isApply:" + isApply);
+        return isApply;
     }
 
     @Override

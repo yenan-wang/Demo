@@ -28,10 +28,18 @@ public class OkhttpInterceptorClassVisitor extends ClassVisitor {
     @Override
     public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {
         MethodVisitor methodVisitor = super.visitMethod(access, name, descriptor, signature, exceptions);
+        //Select the construction method of the 'Builder' class and insert the pile
         if ("okhttp3/OkHttpClient".equals(mClassName)) {
             if ("<init>".equals(name) && !descriptor.equals("()V")) {
                 println(Constants.PLUGIN_TAG + "/" + "visitMethod, find className:" + mClassName);
                 return new OkhttpInterceptorMethodVisitor(api, methodVisitor);
+            }
+        }
+        //Select the 'build()' method of the 'Builder' class to insert the pile
+        if ("okhttp3/OkHttpClient$Builder".equals(mClassName)) {
+            if ("build".equals(name) && "()Lokhttp3/OkHttpClient;".equals(descriptor)) {
+                println(Constants.PLUGIN_TAG + "/" + "visitMethod, find className:" + mClassName);
+                return new OkhttpInterceptorBuildVisitor(api, methodVisitor);
             }
         }
         return methodVisitor;
