@@ -58,7 +58,7 @@
 
     <string name="button_5_3">自定義view</string>
 
-    <string name="button_6_1">應用間數據通信</string>
+    <string name="button_6_1">NestedScrolling示例</string>
 
     <string name="button_6_2">動態tab增刪</string>
 

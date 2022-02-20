@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.second.viewpager2.ViewPager2Activity;
+import com.example.demo.main.six.nested.NestedDemoActivity;
 import com.example.demo.main.third.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
 import com.example.demo.main.first.TextActivity;
@@ -90,8 +91,9 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_5_1), WebViewActivity.class);
         buttonNameList.put(getString(R.string.button_5_2), BallSlidingActivity.class);
         buttonNameList.put(getString(R.string.button_5_3), CustomViewActivity.class);
-/*
-        buttonNameList.put(getString(R.string.button_6_1), TextActivity.class);
+
+        buttonNameList.put(getString(R.string.button_6_1), NestedDemoActivity.class);
+        /*
         buttonNameList.put(getString(R.string.button_6_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_6_3), TextActivity.class);
 */

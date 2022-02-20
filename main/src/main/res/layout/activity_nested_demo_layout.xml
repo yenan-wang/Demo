@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.demo.main.six.nested.NestedParent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/nested_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_220"
+            android:background="@color/blue"
+            android:text="按钮区域" />
+
+        <!--<com.example.demo.main.six.nested.Wrapper
+            android:id="@+id/container_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="222dp"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_2_1"
+                android:layout_gravity="end"/>
+
+        </com.example.demo.main.six.nested.Wrapper>-->
+
+        <com.example.demo.main.six.nested.NestedChild
+            android:id="@+id/nested_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_220"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/button_6_1"
+                android:textColor="@color/black" />
+
+        </com.example.demo.main.six.nested.NestedChild>
+
+    </com.example.demo.main.six.nested.NestedParent>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

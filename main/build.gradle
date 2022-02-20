@@ -40,7 +40,7 @@ dependencies {
     implementation project(":common")
     implementation project(":network")
     implementation project(":aidl")
-    implementation 'com.example.demo.account:account-api:1.0.0@jar'
+    compileOnly 'com.example.demo.account:account-api:1.0.0@jar'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     /*implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'*/

@@ -69,7 +69,7 @@
 
     <string name="button_5_3">自定义view</string>
 
-    <string name="button_6_1">应用间数据通信</string>
+    <string name="button_6_1">NestedScrolling示例</string>
 
     <string name="button_6_2">动态tab增删</string>
 
