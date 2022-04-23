@@ -11,29 +11,26 @@
         android:background="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <com.example.demo.main.second.clicktouch.MiddleGroup
-        android:id="@+id/middle_group"
-        android:layout_width="@dimen/dp_100"
-        android:layout_height="@dimen/dp_100"
-        android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_group"
-        app:layout_constraintEnd_toEndOf="@id/bottom_group"
-        app:layout_constraintStart_toStartOf="@id/bottom_group"
-        app:layout_constraintTop_toTopOf="@id/bottom_group" />
+        <com.example.demo.main.second.clicktouch.MiddleGroup
+            android:id="@+id/middle_group"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_centerInParent="true"
+            android:background="@color/red">
 
-    <com.example.demo.main.second.clicktouch.TopTextView
-        android:id="@+id/top_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
-        android:text="@string/demo_text"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_group"
-        app:layout_constraintEnd_toEndOf="@id/bottom_group"
-        app:layout_constraintStart_toStartOf="@id/bottom_group"
-        app:layout_constraintTop_toTopOf="@id/bottom_group" />
+            <com.example.demo.main.second.clicktouch.TopTextView
+                android:id="@+id/top_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:text="@string/demo_text"
+                android:layout_centerInParent="true"/>
 
+        </com.example.demo.main.second.clicktouch.MiddleGroup>
+
+    </com.example.demo.main.second.clicktouch.BottomGroup>
 
     <LinearLayout
         android:id="@+id/select_group"
