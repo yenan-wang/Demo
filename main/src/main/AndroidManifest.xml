@@ -22,6 +22,10 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
+            android:name=".first.databinding.DataBindingActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
             android:name=".first.TextActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
@@ -62,8 +66,9 @@
             android:name=".fifth.customview.CustomViewActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".six.nested.NestedDemoActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".six.nested.NestedDemoActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <receiver android:name=".widget.DeskTopWidget">
             <intent-filter>

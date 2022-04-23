@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+<!--        <import type="Integer"/>-->
+        <variable
+            name="templateData"
+            type="com.example.demo.main.first.data.TemplateData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="@dimen/common_icon_large_size"
+            android:layout_height="@dimen/common_icon_large_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:lines="1"
+            android:text="@{templateData.userName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_image"
+            app:layout_constraintTop_toTopOf="@id/header_image" />
+
+        <TextView
+            android:id="@+id/likeCountText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@{templateData.likeCount}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_image"
+            app:layout_constraintTop_toBottomOf="@id/userNameText" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="@{templateData.time}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_image"
+            app:layout_constraintTop_toBottomOf="@id/userNameText" />
+
+        <TextView
+            android:id="@+id/sexImage"
+            android:layout_width="@dimen/common_icon_small_size"
+            android:layout_height="@dimen/common_icon_small_size"
+            app:layout_constraintStart_toEndOf="@id/header_image"
+            android:text="@{templateData.url}"
+            app:layout_constraintTop_toBottomOf="@id/timeText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

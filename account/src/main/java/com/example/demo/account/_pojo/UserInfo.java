@@ -6,6 +6,7 @@ public class UserInfo {
     private int mSex;
     private String mNickName;
     private String mAccountId;
+    private String mUrl;
     private long mRegisterTime;
 
     public String getId() {
@@ -40,6 +41,14 @@ public class UserInfo {
         mAccountId = accountId;
     }
 
+    public void setUrl(String url) {
+        mUrl = url;
+    }
+
+    public String getUrl() {
+        return mUrl;
+    }
+
     public long getRegisterTime() {
         return mRegisterTime;
     }
@@ -55,6 +64,7 @@ public class UserInfo {
                 ", mSex=" + mSex +
                 ", mNickName='" + mNickName + '\'' +
                 ", mAccountId='" + mAccountId + '\'' +
+                ", mUrl='" + mUrl + '\'' +
                 ", mRegisterTime=" + mRegisterTime +
                 '}';
     }

@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 
 import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
+import com.example.demo.main.first.databinding.DataBindingActivity;
 import com.example.demo.main.second.viewpager2.ViewPager2Activity;
 import com.example.demo.main.six.nested.NestedDemoActivity;
 import com.example.demo.main.third.ARouterActivity;
@@ -73,7 +74,7 @@ public class MainActivity extends BaseCommonActivity {
     private Map<String, Class> getButtonNameAndActivityMap() {
         Map<String, Class> buttonNameList = new LinkedHashMap<>();
         buttonNameList.put(getString(R.string.button_1_1), TextActivity.class);
-        buttonNameList.put(getString(R.string.button_1_2), TextActivity.class);
+        buttonNameList.put(getString(R.string.button_1_2), DataBindingActivity.class);
         buttonNameList.put(getString(R.string.button_1_3), GlideActivity.class);
 
         buttonNameList.put(getString(R.string.button_2_1), ClickEventAndDispatchActivity.class);

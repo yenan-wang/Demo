@@ -22,7 +22,7 @@
         <item quantity="other">至少输入%1$d个字，还差%2$d个字</item>
     </plurals>
 
-    <string name="button_1_2">跳转系统页面</string>
+    <string name="button_1_2">DataBinding示例</string>
 
     <!--GlideActivity-->
     <string name="button_1_3">Glide示例</string>

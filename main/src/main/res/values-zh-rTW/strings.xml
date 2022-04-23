@@ -11,7 +11,7 @@
     <!--TextActivity-->
     <string name="button_1_1">文本顯示</string>
 
-    <string name="button_1_2">跳轉系統頁面</string>
+    <string name="button_1_2">DataBinding示例</string>
 
     <!--GlideActivity-->
     <string name="button_1_3">Glide示例</string>

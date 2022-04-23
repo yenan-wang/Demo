@@ -11,7 +11,7 @@
     <!--TextActivity-->
     <string name="button_1_1">Text DisPlay</string>
 
-    <string name="button_1_2">Jump to the System Page</string>
+    <string name="button_1_2">DataBinding Demo</string>
 
     <!--GlideActivity-->
     <string name="button_1_3">Glide Demo</string>
