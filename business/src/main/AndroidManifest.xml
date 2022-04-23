@@ -6,6 +6,10 @@
         <activity
             android:name=".BusinessActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".ipinfo.IpInfoActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
