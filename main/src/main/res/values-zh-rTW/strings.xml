@@ -27,7 +27,9 @@
     <string name="suspend_message">懸掛式消息通知</string>
     <string name="click_to_my_CSDN_blog">點擊前往我的CSDN博客主頁</string>
 
-    <string name="button_3_1">ContentProvider</string>
+    <string name="button_3_1">LiveDataBus示例</string>
+    <string name="wait_message">等待消息回調</string>
+    <string name="send_livedata_message">發送LiveData總線消息</string>
 
     <string name="button_3_2">彈窗示例</string>
 

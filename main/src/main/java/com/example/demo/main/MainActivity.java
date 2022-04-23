@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import androidx.lifecycle.Observer;
+
+import com.example.demo.common.utils.LiveDataBus;
+import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.first.databinding.DataBindingActivity;
@@ -21,6 +25,7 @@ import com.example.demo.main.second.clicktouch.ClickEventAndDispatchActivity;
 import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.common.ui.CommonButton;
 import com.example.demo.main.fifth.WebViewActivity;
+import com.example.demo.main.third.LiveDataBusActivity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -34,12 +39,24 @@ public class MainActivity extends BaseCommonActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initLiveData();
         initView();
+    }
+
+    private void initLiveData() {
+        LiveDataBus.get().with(LiveDataBusActivity.LIVE_DATA_BUS_KEY_HELLO, String.class).observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                ToastUtil.toastShort(MainActivity.this + "收到了：" + s);
+                CommonButton commonButton = mEntryButtonArea.findViewWithTag(getString(R.string.button_3_1));
+                commonButton.setText(s);
+            }
+        });
     }
 
     private void initView() {
         mEntryButtonArea = findViewById(R.id.entry_button_area);
-        final Map<String, Class> map = getButtonNameAndActivityMap();
+        final Map<String, Class<?>> map = getButtonNameAndActivityMap();
         Set<String> strings = map.keySet();
         int pos = 0;
         for (final String buttonName : strings) {
@@ -71,8 +88,8 @@ public class MainActivity extends BaseCommonActivity {
         }
     }
 
-    private Map<String, Class> getButtonNameAndActivityMap() {
-        Map<String, Class> buttonNameList = new LinkedHashMap<>();
+    private Map<String, Class<?>> getButtonNameAndActivityMap() {
+        Map<String, Class<?>> buttonNameList = new LinkedHashMap<>();
         buttonNameList.put(getString(R.string.button_1_1), TextActivity.class);
         buttonNameList.put(getString(R.string.button_1_2), DataBindingActivity.class);
         buttonNameList.put(getString(R.string.button_1_3), GlideActivity.class);
@@ -81,7 +98,7 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_2_2), ViewPager2Activity.class);
         buttonNameList.put(getString(R.string.button_2_3), NotificationActivity.class);
 
-        //buttonNameList.put(getString(R.string.button_3_1), DemoActivity.class);
+        buttonNameList.put(getString(R.string.button_3_1), LiveDataBusActivity.class);
         buttonNameList.put(getString(R.string.button_3_2), WebViewActivity.class);
         buttonNameList.put(getString(R.string.button_3_3), ARouterActivity.class);
 

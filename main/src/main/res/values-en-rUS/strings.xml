@@ -27,7 +27,9 @@
     <string name="suspend_message">Hanging message notification</string>
     <string name="click_to_my_CSDN_blog">Click to go to my CSDN blog homepage</string>
 
-    <string name="button_3_1">ContentProvider</string>
+    <string name="button_3_1">LiveDataBus Demo</string>
+    <string name="wait_message">Wait for message callback</string>
+    <string name="send_livedata_message">Send livedata bus message</string>
 
     <string name="button_3_2">Pop-up Window Demo</string>
 

@@ -34,11 +34,6 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".third.ARouterActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
             android:name=".second.clicktouch.ClickEventAndDispatchActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
@@ -48,6 +43,16 @@
 
         <activity
             android:name=".second.NotificationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".third.ARouterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".third.LiveDataBusActivity"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
