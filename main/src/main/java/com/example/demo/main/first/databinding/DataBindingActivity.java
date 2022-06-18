@@ -9,7 +9,7 @@ import androidx.databinding.DataBindingUtil;
 import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.main.R;
 import com.example.demo.main.databinding.ActivityDataBingingBinding;
-import com.example.demo.main.first.data.TemplateData;
+import com.example.demo.main.first.databinding.data.TemplateData;
 
 public class DataBindingActivity extends BaseCommonActivity {
 

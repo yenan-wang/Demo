@@ -1,4 +1,4 @@
-package com.example.demo.main.first.data;
+package com.example.demo.main.first.databinding.data;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
