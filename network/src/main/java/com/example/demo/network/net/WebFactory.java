@@ -1,7 +1,7 @@
 package com.example.demo.network.net;
 
+import com.example.demo.network.interceptor.ExpiredAndRetryInterceptor;
 import com.example.demo.network.interceptor.HeaderIntercept;
-import com.example.demo.network.interceptor.NetInterceptor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,6 +29,7 @@ public class WebFactory {
 
         //添加各种拦截器
         okHttpBuilder.addInterceptor(new HeaderIntercept());
+        okHttpBuilder.addInterceptor(new ExpiredAndRetryInterceptor());
         //okHttpBuilder.addInterceptor(new NetInterceptor());
 
         OkHttpClient okHttpClient = okHttpBuilder.build();

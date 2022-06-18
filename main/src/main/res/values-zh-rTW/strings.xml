@@ -31,7 +31,11 @@
     <string name="wait_message">等待消息回調</string>
     <string name="send_livedata_message">發送LiveData總線消息</string>
 
-    <string name="button_3_2">彈窗示例</string>
+    <string name="button_3_2">播放音樂示例</string>
+    <string name="play">播放</string>
+    <string name="pause">暫停</string>
+    <string name="stop">停止</string>
+    <string name="buffer_complete">緩衝完成</string>
 
     <string name="button_3_3">ARouter示例</string>
     <string name="click_to_page">點擊跳轉頁面</string>

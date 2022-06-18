@@ -31,7 +31,11 @@
     <string name="wait_message">Wait for message callback</string>
     <string name="send_livedata_message">Send livedata bus message</string>
 
-    <string name="button_3_2">Pop-up Window Demo</string>
+    <string name="button_3_2">Play Music Demo</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">stop</string>
+    <string name="buffer_complete">buffering complete</string>
 
     <string name="button_3_3">ARouter Demo</string>
     <string name="click_to_page">click to jump to the page</string>

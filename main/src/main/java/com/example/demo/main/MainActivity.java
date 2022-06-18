@@ -26,6 +26,7 @@ import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.common.ui.CommonButton;
 import com.example.demo.main.fifth.WebViewActivity;
 import com.example.demo.main.third.LiveDataBusActivity;
+import com.example.demo.main.third.MusicPlayActivity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -39,7 +40,7 @@ public class MainActivity extends BaseCommonActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initLiveData();
+        //initLiveData();
         initView();
     }
 
@@ -99,7 +100,7 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_2_3), NotificationActivity.class);
 
         buttonNameList.put(getString(R.string.button_3_1), LiveDataBusActivity.class);
-        buttonNameList.put(getString(R.string.button_3_2), WebViewActivity.class);
+        buttonNameList.put(getString(R.string.button_3_2), MusicPlayActivity.class);
         buttonNameList.put(getString(R.string.button_3_3), ARouterActivity.class);
 
         buttonNameList.put(getString(R.string.button_4_1), AidlActivity.class);

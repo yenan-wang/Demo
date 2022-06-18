@@ -51,7 +51,12 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".third.LiveDataBusActivity"
+            android:name=".third.MusicPlayActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".third.ARouterActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
