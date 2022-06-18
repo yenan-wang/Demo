@@ -1,6 +1,7 @@
 package com.example.demo.main.third;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -10,6 +11,7 @@ import androidx.lifecycle.Observer;
 
 import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.common.utils.LiveDataBus;
+import com.example.demo.common.utils.LogUtil;
 import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
 
@@ -32,13 +34,37 @@ public class LiveDataBusActivity extends BaseCommonActivity {
             }
         });
         mTextView = findViewById(R.id.text);
+        mTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LiveDataBus.get().with(LiveDataBusActivity.LIVE_DATA_BUS_KEY_HELLO, String.class).observe(LiveDataBusActivity.this, new Observer<String>() {
+                    @Override
+                    public void onChanged(String s) {
+                        LogUtil.e("run 收到了");
+                        ToastUtil.toastShort(LiveDataBusActivity.this + "run收到了：" + s);
+                    }
+                });
+            }
+        });
         initLiveDataBus();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        }, 10000);
     }
 
     private void initLiveDataBus() {
         LiveDataBus.get().with(LIVE_DATA_BUS_KEY_HELLO, String.class).observe(this, new Observer<String>() {
             @Override
             public void onChanged(String s) {
+                LogUtil.e("收到了");
                 ToastUtil.toastShort(s);
                 mTextView.setText(s);
             }

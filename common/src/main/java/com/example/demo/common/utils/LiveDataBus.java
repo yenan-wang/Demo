@@ -2,8 +2,6 @@ package com.example.demo.common.utils;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 
 import java.lang.reflect.Field;
@@ -52,11 +50,21 @@ public class LiveDataBus {
         }
 
         @Override
+        public void observeSticky(@NonNull LifecycleOwner owner, @NonNull Observer<? super T> observer) {
+            super.observeSticky(owner, observer);
+        }
+
+        @Override
         public void observeForever(@NonNull androidx.lifecycle.Observer<? super T> observer) {
             if (!map.containsKey(observer)) {
                 map.put(observer, new ObserverWrapper(observer));
             }
             super.observeForever(map.get(observer));
+        }
+
+        @Override
+        public void observeForeverSticky(@NonNull Observer<? super T> observer) {
+            super.observeForeverSticky(observer);
         }
 
         @Override

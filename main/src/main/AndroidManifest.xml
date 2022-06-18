@@ -46,7 +46,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".third.ARouterActivity"
+            android:name=".third.LiveDataBusActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
