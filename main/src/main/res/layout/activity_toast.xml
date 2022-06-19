@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".six.toast.ToastActivity">
+
+    <com.example.demo.common.ui.CommonButton
+        android:id="@+id/pop_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_pop_window"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.demo.common.ui.CommonButton
+        android:id="@+id/sys_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_sys_toast"
+        app:layout_constraintStart_toEndOf="@id/pop_window"
+        app:layout_constraintTop_toTopOf="@id/pop_window" />
+
+    <com.example.demo.common.ui.CommonButton
+        android:id="@+id/custom_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast_custom_toast"
+        app:layout_constraintStart_toEndOf="@id/sys_toast"
+        app:layout_constraintTop_toTopOf="@id/pop_window" />
+
+    <com.example.demo.common.ui.CommonButton
+        android:id="@+id/custom_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="@string/toast_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pop_window" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

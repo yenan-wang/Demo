@@ -2,11 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.demo.main">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application>
-        <activity
-            android:name=".fifth.ballslide.BallSlidingActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -77,8 +75,22 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
+            android:name=".fifth.ballslide.BallSlidingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".fifth.WebViewActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".six.nested.NestedDemoActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".six.toast.ToastActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
         <receiver android:name=".widget.DeskTopWidget">
             <intent-filter>

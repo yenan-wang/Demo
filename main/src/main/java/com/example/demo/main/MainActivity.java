@@ -14,6 +14,7 @@ import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.first.databinding.DataBindingActivity;
 import com.example.demo.main.second.viewpager2.ViewPager2Activity;
 import com.example.demo.main.six.nested.NestedDemoActivity;
+import com.example.demo.main.six.toast.ToastActivity;
 import com.example.demo.main.third.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
 import com.example.demo.main.first.TextActivity;
@@ -112,8 +113,8 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_5_3), CustomViewActivity.class);
 
         buttonNameList.put(getString(R.string.button_6_1), NestedDemoActivity.class);
+        buttonNameList.put(getString(R.string.button_6_2), ToastActivity.class);
         /*
-        buttonNameList.put(getString(R.string.button_6_2), TextActivity.class);
         buttonNameList.put(getString(R.string.button_6_3), TextActivity.class);
 */
 

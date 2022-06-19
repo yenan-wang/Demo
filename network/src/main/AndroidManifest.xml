@@ -2,10 +2,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.demo.network">
 
-    <application>
-        <activity
-            android:name="com.example.demo.main.fifth.WebViewActivity"
-            android:exported="true" />
-    </application>
-
 </manifest>
