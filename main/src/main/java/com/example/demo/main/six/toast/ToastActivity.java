@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
@@ -73,7 +74,11 @@ public class ToastActivity extends AppCompatActivity implements View.OnClickList
         View layoutView = inflateLayout(inflater);
         WindowManager windowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
         WindowManager.LayoutParams params = new WindowManager.LayoutParams();
-        params.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+        if (Settings.canDrawOverlays(this)) {
+            params.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+        } else {
+            ToastUtil.toastLong("请打开应用浮窗权限.");
+        }
         params.flags = WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM
                 | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
         //params.gravity = Gravity.BOTTOM;
@@ -97,7 +102,12 @@ public class ToastActivity extends AppCompatActivity implements View.OnClickList
         }
         AlertDialog dialog = mBuilder.create();
         dialog.setView(inflateLayout(LayoutInflater.from(dialog.getContext())));
-        dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
+        if (Settings.canDrawOverlays(this)) {
+            dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
+        } else {
+            ToastUtil.toastLong("请打开应用浮窗权限.");
+        }
+
         dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         dialog.getWindow().setDimAmount(0);
         dialog.getWindow().getAttributes().verticalMargin = 0.3F;
