@@ -18,7 +18,6 @@
             android:id="@+id/icon"
             android:layout_width="@dimen/dp_50"
             android:layout_height="@dimen/dp_50"
-            android:src="@drawable/icon_app"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

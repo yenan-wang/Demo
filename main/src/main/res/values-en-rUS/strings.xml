@@ -72,7 +72,7 @@
     <string name="toast_sys_toast">Use system Toast</string>
     <string name="toast_custom_toast">Use custom Toast</string>
     <string name="toast_dialog">use Dialog</string>
-    <string name="install_tip">has installed %s</string>
+    <string name="install_tip">%s has installed</string>
     <string name="open">open</string>
 
     <string name="button_6_3">Encryption and Decryption</string>

@@ -12,11 +12,13 @@ import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.demo.common.ui.CommonButton;
+import com.example.demo.common.utils.AppUtil;
 import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
 
@@ -26,7 +28,6 @@ public class ToastActivity extends AppCompatActivity implements View.OnClickList
     private CommonButton mButtonSysToast;
     private CommonButton mButtonCustomToast;
     private CommonButton mButtonCustomDialog;
-    private AlertDialog.Builder mBuilder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,11 +98,9 @@ public class ToastActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void customDialog() {
-        if (mBuilder == null) {
-            mBuilder = new AlertDialog.Builder(this);
-        }
+        AlertDialog.Builder  mBuilder = new AlertDialog.Builder(this);
         AlertDialog dialog = mBuilder.create();
-        dialog.setView(inflateLayout(LayoutInflater.from(dialog.getContext())));
+        dialog.setView(inflateLayout(LayoutInflater.from(this)));
         if (Settings.canDrawOverlays(this)) {
             dialog.getWindow().setType(WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY);
         } else {
@@ -136,7 +135,11 @@ public class ToastActivity extends AppCompatActivity implements View.OnClickList
     private View inflateLayout(LayoutInflater inflater) {
         View view = inflater.inflate(R.layout.custom_toast_layout, null);
         TextView content = view.findViewById(R.id.content);
-        content.setText(getString(R.string.install_tip, "即录"));
+        String pkgName = "com.coloros.videoeditor";
+        //String pkgName = "com.tencent.mm";
+        content.setText(getString(R.string.install_tip, AppUtil.getAppName(view.getContext(), pkgName)));
+        ImageView imageView = view.findViewById(R.id.icon);
+        imageView.setImageDrawable(AppUtil.getAppIcon(view.getContext(), pkgName));
         CommonButton commonButton = view.findViewById(R.id.open_button);
         /*commonButton.setFocusable(true);
 

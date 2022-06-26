@@ -89,14 +89,22 @@ public class AppUtil {
      * @return 返回该包名应用的图标
      */
     public static Drawable getAppIcon(Context context, String packageName) {
+        if (context == null) {
+            LogUtil.e(TAG, "getAppIcon, context is null.");
+            return null;
+        }
+        if (TextUtils.isEmpty(packageName)) {
+            LogUtil.e(TAG, "getAppIcon, packageName is null or empty.");
+            return null;
+        }
         try {
             //包管理操作管理类
             PackageManager pm = context.getPackageManager();
             //获取到应用信息
-            ApplicationInfo info = pm.getApplicationInfo(packageName, 0);
+            ApplicationInfo info = pm.getApplicationInfo(packageName, PackageManager.GET_META_DATA);
             return info.loadIcon(pm);
         } catch (PackageManager.NameNotFoundException e) {
-            LogUtil.d(TAG, "error:" + e.getMessage());
+            LogUtil.e(TAG, "error:" + e.getMessage());
         }
         return null;
     }
@@ -115,7 +123,7 @@ public class AppUtil {
             PackageInfo packageInfo = pm.getPackageInfo(packageName, 0);
             return packageInfo.versionName;
         } catch (PackageManager.NameNotFoundException e) {
-            LogUtil.d(TAG, "error:" + e.getMessage());
+            LogUtil.e(TAG, "error:" + e.getMessage());
         }
         return "";
     }
@@ -129,14 +137,21 @@ public class AppUtil {
      * @return 返回该包名应用的名字
      */
     public static String getAppName(Context context, String packageName) {
+        if (context == null) {
+            LogUtil.e(TAG, "getAppName, context is null.");
+            return "";
+        }
+        if (TextUtils.isEmpty(packageName)) {
+            LogUtil.e(TAG, "getAppName, packageName is null or empty.");
+            return "";
+        }
         //包管理操作管理类
         PackageManager pm = context.getPackageManager();
         try {
-            ApplicationInfo info = pm.getApplicationInfo(packageName, 0);
+            ApplicationInfo info = pm.getApplicationInfo(packageName, PackageManager.GET_META_DATA);
             return info.loadLabel(pm).toString();
         } catch (PackageManager.NameNotFoundException e) {
-            LogUtil.d(TAG, "error:" + e.getMessage());
-
+            LogUtil.e(TAG, "error:" + e.getMessage());
         }
         return "";
     }
@@ -156,7 +171,7 @@ public class AppUtil {
             //获取到所有的权限
             return packageInfo.requestedPermissions;
         } catch (PackageManager.NameNotFoundException e) {
-            LogUtil.d(TAG, "error:" + e.getMessage());
+            LogUtil.e(TAG, "error:" + e.getMessage());
         }
         return null;
     }
@@ -178,7 +193,7 @@ public class AppUtil {
             return packageInfo.signatures[0].toCharsString();
 
         } catch (PackageManager.NameNotFoundException e) {
-            LogUtil.d(TAG, "error:" + e.getMessage());
+            LogUtil.e(TAG, "error:" + e.getMessage());
         }
         return packageName;
     }
