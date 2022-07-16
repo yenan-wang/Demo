@@ -2,6 +2,7 @@ package com.example.demo.common.utils;
 
 import android.util.Base64;
 
+import java.nio.charset.StandardCharsets;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -112,4 +113,27 @@ public class EncryptUtil {
     public static byte[] getIv() {
         return Base64.decode(IV_CONTENT, Base64.NO_WRAP);
     }
+
+    public static byte[] getKey() {
+        return KEY.getBytes(StandardCharsets.UTF_8);
+    }
+
+    public static byte[] commonEncrypt(byte[] fileBytes) {
+        return encryptAES2Base64(
+                fileBytes,
+                base64Decode(getKey()),
+                MODE_AES_CTR_NOPADDING,
+                getIv()
+        );
+    }
+
+    public static byte[] commonDecrypt(byte[] encryptBytes) {
+        return decryptBase64AES(
+                encryptBytes,
+                base64Decode(getKey()),
+                MODE_AES_CTR_NOPADDING,
+                getIv()
+        );
+    }
+
 }

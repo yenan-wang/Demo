@@ -1,7 +1,11 @@
 package com.example.demo.main.third;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.Settings;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -9,10 +13,14 @@ import androidx.annotation.Nullable;
 import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.common.ui.CommonButton;
 import com.example.demo.common.ui.progressbar.HorizontalProgressBar;
+import com.example.demo.common.utils.EncryptUtil;
+import com.example.demo.common.utils.FileUtil;
 import com.example.demo.common.utils.LogUtil;
 import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
 import com.example.demo.network.CommonRequestUtil;
+
+import java.io.File;
 
 public class MusicPlayActivity extends BaseCommonActivity {
 
@@ -20,11 +28,16 @@ public class MusicPlayActivity extends BaseCommonActivity {
     //private static final String URL = "http://m801.music.126.net/20220506233855/e31a3cacf63fccd7d70bd2d70d6b58de/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096440447/f0d0/3fb1/34f3/07609c3e62164085dad86c7c6cdf7af3.mp3";
     //private static final String URL = "http://m701.music.126.net/20220506232040/8f473da7d9f77862d806ce9cbaa41008/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096440447/f0d0/3fb1/34f3/07609c3e62164085dad86c7c6cdf7af3.mp3";
     private static final String URL = "http://music.163.com/song/media/outer/url?id=1808492017.mp3";
+    private static final String LOCAL_PATH = FileUtil.getExternalStorageDir() + File.separator + "Music" + File.separator + "周杰伦 - 东风破.mp3";
+    private static final String SAVE_LOCAL_PATH = FileUtil.getExternalStorageDir() + File.separator + "Music" + File.separator + "周杰伦 - 东风破.ngb";
+    private static final String DD_LOCAL_PATH = FileUtil.getExternalStorageDir() + File.separator + "Music" + File.separator + "周杰伦 - 东风破(解码).mp3";
     private static final String TAG = "MusicPlayActivity";
 
     private MediaPlayer mPlayer;
     private CommonButton mPlayOrPauseButton;
     private CommonButton mStopButton;
+    private CommonButton mEncryptMusicButton;
+    private CommonButton mDeryptAndPlayMusicButton;
     private HorizontalProgressBar mProgressBar;
 
     @Override
@@ -58,6 +71,52 @@ public class MusicPlayActivity extends BaseCommonActivity {
             @Override
             public void complete() {
                 ToastUtil.toastShort(getString(R.string.buffer_complete));
+            }
+        });
+
+        mEncryptMusicButton = findViewById(R.id.encrypt_music_button);
+        mEncryptMusicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Build.VERSION.SDK_INT >= 30) {
+                    if (!Environment.isExternalStorageManager()) {
+                        Intent intent = new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
+                        startActivity(intent);
+                        return;
+                    }
+                }
+
+                byte[] fileBytes = FileUtil.fileToByte(LOCAL_PATH);
+                if (fileBytes != null) {
+                    byte[] result = EncryptUtil.commonEncrypt(fileBytes);
+                    boolean isSuccess = FileUtil.saveByteFile(SAVE_LOCAL_PATH, result, true);
+                    if (isSuccess) {
+                        ToastUtil.toastLong("保存加密文件成功！");
+                    } else {
+                        ToastUtil.toastLong("保存加密文件失败！");
+                    }
+                }
+            }
+        });
+        mDeryptAndPlayMusicButton = findViewById(R.id.decrypt_and_play_music_button);
+        mDeryptAndPlayMusicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                byte[] fileBytes = FileUtil.fileToByte(SAVE_LOCAL_PATH);
+                byte[] original = EncryptUtil.commonDecrypt(fileBytes);
+                boolean isSuccess = FileUtil.saveByteFile(DD_LOCAL_PATH, original, true);
+                if (isSuccess) {
+                    ToastUtil.toastLong("保存解密文件成功！");
+                    try {
+                        mPlayer.setDataSource(DD_LOCAL_PATH);
+                        mPlayer.prepareAsync();
+                    } catch (Exception e) {
+                        LogUtil.e(e.getMessage());
+                    }
+
+                } else {
+                    ToastUtil.toastLong("保存解密文件失败！");
+                }
             }
         });
     }
