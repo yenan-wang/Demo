@@ -19,7 +19,7 @@ public class CommonRequestUtil {
     public static void request(String url, RequestResult requestResult) {
         OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder();
         okHttpClientBuilder.followRedirects(true);
-        okHttpClientBuilder.addInterceptor(new CommonRequestInterceptor());
+        //okHttpClientBuilder.addInterceptor(new CommonRequestInterceptor());
         Request.Builder builder = new Request.Builder();
         builder.url(url);
 

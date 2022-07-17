@@ -35,6 +35,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(":nativelib")
     api rootProject.ext.dependencies.publicImplementation
     implementation rootProject.ext.dependencies.commonImplementation
     annotationProcessor rootProject.ext.dependencies.annotationProcessor

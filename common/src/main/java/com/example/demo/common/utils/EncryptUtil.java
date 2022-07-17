@@ -2,6 +2,8 @@ package com.example.demo.common.utils;
 
 import android.util.Base64;
 
+import com.example.demo.nativelib.EncryptHolder;
+
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -24,8 +26,6 @@ public class EncryptUtil {
     public static final String MODE_AES_CTR_PKCS5PADDING = "AES/CTR/PKCS5Padding";
     public static final String MODE_AES_CTR_NOPADDING = "AES/CTR/NoPadding";
     private static final String TAG = "EncryptUtil";
-    private static final String KEY = "5f57YnOLa6laXuSs2qtpwwqkZ5T2JtKHfSgW56AXJpM=";
-    private static final String IV_CONTENT = "nlLoNPE5Tv2CfMd+vVkI/A==";
     private static final String ALGORITHM_RSA = "RSA";
     private static final String ALGORITHM_AES = "AES";
     private static final String ALGORITHM_MD5 = "MD5";
@@ -111,11 +111,11 @@ public class EncryptUtil {
     }
 
     public static byte[] getIv() {
-        return Base64.decode(IV_CONTENT, Base64.NO_WRAP);
+        return Base64.decode(EncryptHolder.sInstance().getIvContent(), Base64.NO_WRAP);
     }
 
     public static byte[] getKey() {
-        return KEY.getBytes(StandardCharsets.UTF_8);
+        return EncryptHolder.sInstance().getKey().getBytes(StandardCharsets.UTF_8);
     }
 
     public static byte[] commonEncrypt(byte[] fileBytes) {
