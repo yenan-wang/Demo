@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:lines="1"
+        android:hint="请输入任意单个汉字，查看笔划"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.demo.common.ui.CommonButton
+        android:id="@+id/parse_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始解析"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text" />
+
+    <com.example.demo.common.ui.CommonButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始播放"
+        app:layout_constraintStart_toEndOf="@id/parse_button"
+        app:layout_constraintTop_toTopOf="@id/parse_button" />
+
+    <com.example.demo.common.ui.basics.Bihua
+        android:id="@+id/play_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parse_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.demo.main.R;
+import com.example.demo.main.fifth.customview.bihua.CustomViewBihuaFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.example.demo.common.BaseCommonActivity;
 
@@ -38,15 +39,15 @@ public class CustomViewActivity extends BaseCommonActivity {
     private void initData() {
         mTabNameList = new ArrayList<>();
         mTabNameList.add("基础图形");
-        mTabNameList.add("基础二维图形");
-        mTabNameList.add("……");
+        mTabNameList.add("蜘蛛网");
         mTabNameList.add("进度条");
+        mTabNameList.add("笔画");
 
         mFragmentsList = new ArrayList<>();
         mFragmentsList.add(new CustomViewFragment());
-        mFragmentsList.add(new CustomViewFragment());
         mFragmentsList.add(new CustomViewMoreFragment());
         mFragmentsList.add(new CustomViewProgressFragment());
+        mFragmentsList.add(new CustomViewBihuaFragment());
     }
 
     private void initView() {

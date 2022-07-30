@@ -5,14 +5,18 @@ import androidx.annotation.NonNull;
 import com.example.demo.network.interceptor.CommonRequestInterceptor;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okio.Buffer;
+import okio.BufferedSource;
 
 public class CommonRequestUtil {
 
@@ -34,10 +38,20 @@ public class CommonRequestUtil {
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 ResponseBody responseBody = response.body();
                 if (responseBody != null) {
-                    Buffer buffer = responseBody.source().buffer().clone();
-                    //buffer.readString()
+                    BufferedSource bufferedSource = responseBody.source();
+                    bufferedSource.request(Long.MAX_VALUE);
+                    Charset charset = StandardCharsets.UTF_8;
+                    MediaType mediaType = responseBody.contentType();
+                    if (mediaType != null) {
+                        Charset responseCharset = mediaType.charset(); //charset
+                        if (responseCharset != null) {
+                            charset = responseCharset;
+                        }
+                    }
+                    Buffer buffer = bufferedSource.buffer().clone();
+                    String responseContent = buffer.readString(charset); //响应体内容
+                    requestResult.success(responseContent);
                 }
-                //LogUtil.d(s);
             }
         });
 
