@@ -24,6 +24,7 @@ public class CustomViewBihuaFragment extends Fragment implements View.OnClickLis
     private CommonButton mPlayButton;
     private EditText mEditText;
     private BihuaViewModel mBihuaViewModel;
+    private boolean mIsNeedPlay = false;
 
     @Nullable
     @Override
@@ -47,14 +48,23 @@ public class CustomViewBihuaFragment extends Fragment implements View.OnClickLis
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.parse_button) {
-            String hanzi = mEditText.getText().toString();
-            if (TextUtils.isEmpty(hanzi)) {
-                parse();
-            } else {
-                request(hanzi);
-            }
+            preParse();
         } else if (v.getId() == R.id.play_button) {
-            mBihua.play();
+            if (mBihua.hasParse()) {
+                mBihua.play();
+            } else {
+                mIsNeedPlay = true;
+                preParse();
+            }
+        }
+    }
+
+    private void preParse() {
+        String hanzi = mEditText.getText().toString();
+        if (TextUtils.isEmpty(hanzi)) {
+            parse();
+        } else {
+            request(hanzi);
         }
     }
 
@@ -62,11 +72,15 @@ public class CustomViewBihuaFragment extends Fragment implements View.OnClickLis
         String content = AssetsUtil.readAssetsFile(getContext(), "wo.json");
         boolean isSuccess = mBihua.parse(content);
         if (isSuccess) {
-            ToastUtil.toastLong("解析成功！");
+            if (mIsNeedPlay) {
+                mIsNeedPlay = false;
+                mBihua.play();
+            } else {
+                ToastUtil.toastLong("解析成功！");
+            }
         } else {
             ToastUtil.toastLong("解析失败！");
         }
-
     }
 
     private void request(String hanzi) {
@@ -78,7 +92,12 @@ public class CustomViewBihuaFragment extends Fragment implements View.OnClickLis
                     public void run() {
                         boolean isParse = mBihua.parse(jsonString);
                         if (isParse) {
-                            ToastUtil.toastLong("解析成功！");
+                            if (mIsNeedPlay) {
+                                mIsNeedPlay = false;
+                                mBihua.play();
+                            } else {
+                                ToastUtil.toastLong("解析成功！");
+                            }
                         } else {
                             ToastUtil.toastLong("解析失败！");
                         }

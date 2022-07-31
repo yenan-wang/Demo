@@ -145,10 +145,11 @@ public class Bihua extends View {
                 mMediansPathMeasures.add(new PathMeasure(path, false));
                 mMediansPaths.add(path);
             }
-            boolean isParseSuccess = !mStrokePaths.isEmpty() && !mMediansPaths.isEmpty();
+            boolean isParseSuccess = hasParse();
             if (isParseSuccess) {
-                play();
+                invalidate();
             }
+            LogUtil.d("parse, isParseSuccess:" + isParseSuccess);
             return isParseSuccess;
         } catch (JSONException e) {
             LogUtil.e("parse, " + e.getMessage());
@@ -163,6 +164,10 @@ public class Bihua extends View {
         }
         ToastUtil.toastLong("开始播放！");
         startAnimator();
+    }
+
+    public boolean hasParse() {
+        return !mStrokePaths.isEmpty() && !mMediansPaths.isEmpty();
     }
 
     private void init() {
