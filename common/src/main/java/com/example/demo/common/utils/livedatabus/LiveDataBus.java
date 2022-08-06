@@ -1,8 +1,10 @@
-package com.example.demo.common.utils;
+package com.example.demo.common.utils.livedatabus;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
+
+import com.example.demo.common.utils.LogUtil;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

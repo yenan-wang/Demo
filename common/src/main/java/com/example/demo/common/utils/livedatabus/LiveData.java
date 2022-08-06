@@ -1,4 +1,4 @@
-package com.example.demo.common.utils;
+package com.example.demo.common.utils.livedatabus;
 
 import static androidx.lifecycle.Lifecycle.State.DESTROYED;
 import static androidx.lifecycle.Lifecycle.State.STARTED;

@@ -75,5 +75,13 @@
     <string name="install_tip">%s has installed</string>
     <string name="open">open</string>
 
-    <string name="button_6_3">Encryption and Decryption</string>
+    <string name="button_6_3">Simulated crash</string>
+    <string name="execute_crash_code">Execute crash code</string>
+    <plurals name="stay_for_last_time">
+        <item quantity="one">Last time it stayed for %s second. Do you want to re time it?</item>
+        <item quantity="other">Last time it stayed for %s seconds. Do you want to re time it?</item>
+    </plurals>
+    <string name="has_recovered">It has been restored to the last stay time</string>
+    <string name="recalculate_stay_time">Recalculate the length of stay</string>
+    <string name="start_timing">Start timing</string>
 </resources>

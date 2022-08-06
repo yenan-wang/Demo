@@ -85,5 +85,13 @@
     <string name="install_tip">%s已安装</string>
     <string name="open">打开</string>
 
-    <string name="button_6_3">加解密</string>
+    <string name="button_6_3">模拟崩溃</string>
+    <string name="execute_crash_code">执行崩溃代码</string>
+    <plurals name="stay_for_last_time">
+        <item quantity="one">上次停留了%s秒，是否重新计时？</item>
+        <item quantity="other">上次停留了%s秒，是否重新计时？</item>
+    </plurals>
+    <string name="has_recovered">已经恢复至上次停留时长</string>
+    <string name="recalculate_stay_time">重新计算停留时长</string>
+    <string name="start_timing">开始计时</string>
 </resources>

@@ -7,12 +7,13 @@ import android.widget.LinearLayout;
 
 import androidx.lifecycle.Observer;
 
-import com.example.demo.common.utils.LiveDataBus;
+import com.example.demo.common.utils.livedatabus.LiveDataBus;
 import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.first.databinding.DataBindingActivity;
 import com.example.demo.main.second.viewpager2.ViewPager2Activity;
+import com.example.demo.main.six.crash.CrashActivity;
 import com.example.demo.main.six.nested.NestedDemoActivity;
 import com.example.demo.main.six.toast.ToastActivity;
 import com.example.demo.main.third.ARouterActivity;
@@ -114,9 +115,8 @@ public class MainActivity extends BaseCommonActivity {
 
         buttonNameList.put(getString(R.string.button_6_1), NestedDemoActivity.class);
         buttonNameList.put(getString(R.string.button_6_2), ToastActivity.class);
-        /*
-        buttonNameList.put(getString(R.string.button_6_3), TextActivity.class);
-*/
+        buttonNameList.put(getString(R.string.button_6_3), CrashActivity.class);
+
 
         return buttonNameList;
     }

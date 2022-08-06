@@ -1,4 +1,4 @@
-package com.example.demo.common.utils;
+package com.example.demo.common.utils.livedatabus;
 
 public class MutableLiveData<T> extends LiveData<T> {
     @Override
