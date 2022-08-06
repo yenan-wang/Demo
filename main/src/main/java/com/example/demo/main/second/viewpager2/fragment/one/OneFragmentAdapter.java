@@ -84,8 +84,8 @@ public class OneFragmentAdapter extends RecyclerView.Adapter<OneFragmentViewHold
             protected void publishResults(CharSequence constraint, FilterResults results) {
                 List<TextData> list = (List<TextData>) results.values;
                 if (list.isEmpty()) {
-                    ToastUtil.toastLong("无搜索结果");
-                    notifyItemRangeChanged(0, mTextDataList.size());
+                    ToastUtil.toastShort("无搜索结果");
+                    notifyItemRangeRemoved(0, mTextDataList.size());
                 } else {
                     notifyDataSetChanged();
                 }

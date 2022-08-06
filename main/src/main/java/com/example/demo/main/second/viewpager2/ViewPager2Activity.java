@@ -8,6 +8,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 
+import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.main.R;
 
 import com.example.demo.main.second.viewpager2.fragment.one.ViewPager2OneFragment;
@@ -17,7 +18,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewPager2Activity extends AppCompatActivity {
+public class ViewPager2Activity extends BaseCommonActivity {
     private ViewPager2 mViewPager;
     private TabLayout mTabLayout;
     private List<String> mTabTitle = new ArrayList<>();
