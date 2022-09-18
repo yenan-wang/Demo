@@ -99,6 +99,10 @@
             android:name=".six.crash.CrashActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
+        <activity
+            android:name=".seven.JsonConvertActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
         <receiver android:name=".widget.DeskTopWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

@@ -1,0 +1,49 @@
+{
+   "data_ext":
+   {
+      "info":
+      {
+         "imageParam":
+         [
+            {
+               "dynamicEffect":
+               {
+                  "id":2,
+                  "class":"pumpkinPieEffect"
+               },
+               "stickImageUrl":"202209041701552512/202209041701552513/images/7a492ff5-9776-4ab8-bd1d-0a7193f02a23_202209041701552513.jpg",
+               "size":
+               {
+                  "width":586.9062901155328,
+                  "height":1270
+               },
+               "widthHeightRatio":0.4621309370988447,
+               "interactive":1,
+               "property":
+               {
+                  "h5Url":"https://www.baidu.com/",
+                  "dpUrl":"",
+                  "packageNameUrl":"",
+                  "lightAppUrl":""
+               },
+               "maxSize":
+               {
+                  "width":586.9062901155328,
+                  "height":1270
+               },
+               "point":
+               {
+                  "x":426.5468549422336,
+                  "y":427
+               }
+
+            }
+
+         ],
+         "backgroundImageUrl":"202209041701552512/202209041701552513/images/3ca166c0-b6c5-4da7-958c-52b9e68e2765_202209041701552513.jpg",
+         "dynamicCssUrl":"https://pumpkin-pie.com/2022/08/02/5cd812e84fc652b98176c80311a2933d.css"
+      },
+      "templateId":"3"
+   },
+   "type":1
+}

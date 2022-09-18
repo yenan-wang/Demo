@@ -84,4 +84,15 @@
     <string name="has_recovered">It has been restored to the last stay time</string>
     <string name="recalculate_stay_time">Recalculate the length of stay</string>
     <string name="start_timing">Start timing</string>
+
+    <string name="button_7_1">json compression and expansion</string>
+    <string name="read_json">read json</string>
+    <string name="compress_json">compress json</string>
+    <string name="expand_json">expand json</string>
+    <string name="compress_error">compress error</string>
+    <string name="expand_error">expand error</string>
+
+    <string name="button_7_2">Simulated crash</string>
+
+    <string name="button_7_3">Simulated crash</string>
 </resources>

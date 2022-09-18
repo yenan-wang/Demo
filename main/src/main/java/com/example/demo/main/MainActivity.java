@@ -13,6 +13,7 @@ import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.first.databinding.DataBindingActivity;
 import com.example.demo.main.second.viewpager2.ViewPager2Activity;
+import com.example.demo.main.seven.JsonConvertActivity;
 import com.example.demo.main.six.crash.CrashActivity;
 import com.example.demo.main.six.nested.NestedDemoActivity;
 import com.example.demo.main.six.toast.ToastActivity;
@@ -116,6 +117,10 @@ public class MainActivity extends BaseCommonActivity {
         buttonNameList.put(getString(R.string.button_6_1), NestedDemoActivity.class);
         buttonNameList.put(getString(R.string.button_6_2), ToastActivity.class);
         buttonNameList.put(getString(R.string.button_6_3), CrashActivity.class);
+
+        buttonNameList.put(getString(R.string.button_7_1), JsonConvertActivity.class);
+        buttonNameList.put(getString(R.string.button_7_2), ToastActivity.class);
+        buttonNameList.put(getString(R.string.button_7_3), CrashActivity.class);
 
 
         return buttonNameList;
