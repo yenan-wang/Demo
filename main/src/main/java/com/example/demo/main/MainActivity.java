@@ -20,7 +20,7 @@ import com.example.demo.main.third.ARouterActivity;
 import com.example.demo.main.first.GlideActivity;
 import com.example.demo.main.first.TextActivity;
 import com.example.demo.main.fourth.AidlActivity;
-import com.example.demo.main.fourth.VideoActivity;
+import com.example.demo.main.fourth.video.VideoActivity;
 import com.example.demo.main.fourth.recyclerview.RecyclerViewActivity;
 import com.example.demo.main.second.NotificationActivity;
 import com.example.demo.main.second.clicktouch.ClickEventAndDispatchActivity;

@@ -62,7 +62,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".fourth.VideoActivity"
+            android:name=".fourth.video.VideoActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity

@@ -1,0 +1,44 @@
+apply plugin: "maven"
+def projectName = project.name
+task generateAccountApiJar(type: Jar) {
+    println("generate $projectName api jar...")
+    archivesBaseName = "$projectName-api"
+    version("1.0.0")
+    archiveExtension = "jar"
+
+    if (rootProject.ext.android.isRunAlone) {
+        android.applicationVariants.all {
+            variant -> from(variant.javaCompileProvider.get().destinationDir.getPath())
+        }
+    } else {
+        android.libraryVariants.all {
+            variant -> from(variant.javaCompileProvider.get().destinationDir.getPath())
+        }
+    }
+
+    include("com/example/demo/$projectName/_api/**")
+    include("com/example/demo/$projectName/_pojo/**")
+    destinationDirectory = file('build/_api')
+}
+artifacts {
+    archives(generateAccountApiJar) {
+        name = "${projectName}_api"
+    }
+}
+
+uploadArchives {
+    println("uploading account api jar...")
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+
+            addFilter("${projectName}_api") { artifact, file ->
+                artifact.name == "${projectName}_api"
+            }
+
+            pom("${projectName}_api").groupId = 'com.example.demo.account'
+            pom("${projectName}_api").artifactId = "$projectName-api"
+            pom("${projectName}_api").version = '1.0.0'
+        }
+    }
+}
