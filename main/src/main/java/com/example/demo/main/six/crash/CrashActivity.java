@@ -17,7 +17,7 @@ import com.example.demo.common.ui.CommonButton;
 import com.example.demo.common.utils.DialogUtil;
 import com.example.demo.common.utils.LogUtil;
 import com.example.demo.common.utils.ToastUtil;
-import com.example.demo.common.utils.livedatabus.SpUtil;
+import com.example.demo.common.utils.SpUtil;
 import com.example.demo.main.R;
 
 public class CrashActivity extends BaseCommonActivity {

@@ -1,9 +1,7 @@
-package com.example.demo.common.utils.livedatabus;
+package com.example.demo.common.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import com.example.demo.common.utils.AppUtil;
 
 public class SpUtil {
 
