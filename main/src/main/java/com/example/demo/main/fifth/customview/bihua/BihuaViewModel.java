@@ -1,7 +1,7 @@
 package com.example.demo.main.fifth.customview.bihua;
 
-import com.example.demo.common.utils.LogUtil;
 import com.example.demo.network.CommonRequestUtil;
+import com.ngb.wyn.common.utils.LogUtil;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -27,7 +27,7 @@ public class BihuaViewModel {
                 }
             });
         } catch (UnsupportedEncodingException e) {
-            LogUtil.e("catch:" +  e.getMessage());
+            LogUtil.e("catch:" + e.getMessage());
         }
     }
 

@@ -7,8 +7,7 @@ import android.widget.LinearLayout;
 
 import androidx.lifecycle.Observer;
 
-import com.example.demo.common.utils.livedatabus.LiveDataBus;
-import com.example.demo.common.utils.ToastUtil;
+import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.first.databinding.DataBindingActivity;
@@ -25,11 +24,12 @@ import com.example.demo.main.fourth.video.VideoActivity;
 import com.example.demo.main.fourth.recyclerview.RecyclerViewActivity;
 import com.example.demo.main.second.NotificationActivity;
 import com.example.demo.main.second.clicktouch.ClickEventAndDispatchActivity;
-import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.ui.CommonButton;
 import com.example.demo.main.fifth.WebViewActivity;
 import com.example.demo.main.third.LiveDataBusActivity;
 import com.example.demo.main.third.MusicPlayActivity;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.utils.ToastUtil;
+import com.ngb.wyn.common.utils.livedatabus.LiveDataBus;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

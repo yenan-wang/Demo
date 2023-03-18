@@ -10,10 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.utils.livedatabus.LiveDataBus;
-import com.example.demo.common.utils.LogUtil;
-import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
+import com.ngb.wyn.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
+import com.ngb.wyn.common.utils.livedatabus.LiveDataBus;
 
 public class LiveDataBusActivity extends BaseCommonActivity {
 

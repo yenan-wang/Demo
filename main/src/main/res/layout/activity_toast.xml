@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".six.toast.ToastActivity">
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/pop_window"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/sys_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toEndOf="@id/pop_window"
         app:layout_constraintTop_toTopOf="@id/pop_window" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/custom_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toEndOf="@id/sys_toast"
         app:layout_constraintTop_toTopOf="@id/pop_window" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/custom_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -8,12 +8,12 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.ui.CommonButton;
-import com.example.demo.common.utils.AssetsUtil;
-import com.example.demo.common.utils.JsonUtil;
-import com.example.demo.common.utils.LogUtil;
-import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.utils.AssetsUtil;
+import com.ngb.wyn.common.utils.JsonUtil;
+import com.ngb.wyn.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;

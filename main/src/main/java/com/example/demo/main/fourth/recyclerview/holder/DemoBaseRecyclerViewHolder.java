@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.demo.main.R;
-import com.example.demo.common.utils.ToastUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 public abstract class DemoBaseRecyclerViewHolder<T> extends RecyclerView.ViewHolder implements View.OnClickListener {
 

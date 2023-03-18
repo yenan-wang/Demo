@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.demo.common.R;
+import com.example.demo.main.R;
 
 public class NestedChild extends FrameLayout {
     private float mLastActionX = 0;

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.demo.common.ui.basics.Circle
+    <com.ngb.wyn.common.ui.basics.Circle
         android:id="@+id/circle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,14 +12,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.demo.common.ui.basics.Line
+    <com.ngb.wyn.common.ui.basics.Line
         android:id="@+id/line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.demo.common.ui.basics.Graph
+    <com.ngb.wyn.common.ui.basics.Graph
         android:id="@+id/graph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -15,10 +15,10 @@ import androidx.annotation.Nullable;
 
 import com.example.demo.aidl.Book;
 import com.example.demo.aidl.IBookManager;
-import com.example.demo.common.utils.LogUtil;
-import com.example.demo.main.R;
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.utils.ToastUtil;
+import com.example.demo.main.R;
+import com.ngb.wyn.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 import java.util.List;
 

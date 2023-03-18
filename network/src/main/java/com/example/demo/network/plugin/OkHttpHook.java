@@ -1,9 +1,9 @@
 package com.example.demo.network.plugin;
 
-import com.example.demo.common.utils.LogUtil;
-import com.example.demo.common.utils.ReflectUtils;
 import com.example.demo.network.interceptor.AbsInterceptor;
 import com.example.demo.network.interceptor.NetInterceptor;
+import com.ngb.wyn.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.ReflectUtils;
 
 import java.util.ArrayList;
 import java.util.List;

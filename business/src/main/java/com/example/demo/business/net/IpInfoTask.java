@@ -5,7 +5,7 @@ import androidx.annotation.Nullable;
 import com.example.demo.business.callBack.IpInfoLoadTasksCallback;
 import com.example.demo.business.callBack.LoadTasksCallBack;
 import com.example.demo.business.model.IpInfo;
-import com.example.demo.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.LogUtil;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

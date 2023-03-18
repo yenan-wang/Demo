@@ -11,11 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.demo.common.ui.CommonButton;
-import com.example.demo.common.ui.basics.Bihua;
-import com.example.demo.common.utils.AssetsUtil;
-import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.ui.basics.Bihua;
+import com.ngb.wyn.common.utils.AssetsUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 public class CustomViewBihuaFragment extends Fragment implements View.OnClickListener {
 

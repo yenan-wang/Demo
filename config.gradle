@@ -26,8 +26,7 @@ ext {
                     'com.squareup.retrofit2:converter-gson:2.6.1',
                     'com.squareup.retrofit2:adapter-rxjava2:2.6.1',
                     'com.squareup.okhttp3:logging-interceptor:3.9.1',
-                    'com.google.code.gson:gson:2.8.5',
-                    'org.jetbrains:annotations-java5:15.0'
+                    'com.google.code.gson:gson:2.8.5'
             ],
             commonImplementation: [
                     "com.zlc.glide:webpdecoder:2.0.${GLIDE_VERSION}",

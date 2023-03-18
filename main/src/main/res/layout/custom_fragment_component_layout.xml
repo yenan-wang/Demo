@@ -22,7 +22,7 @@
 
         />
 
-    <com.example.demo.common.ui.SlideFrameLayout
+    <com.ngb.wyn.common.ui.SlideFrameLayout
         android:id="@+id/slide_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

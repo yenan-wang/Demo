@@ -11,11 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.demo.common.ui.CommonButton;
-import com.example.demo.common.ui.progressbar.HorizontalProgressBar;
-import com.example.demo.common.utils.LogUtil;
-import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.ui.progressbar.HorizontalProgressBar;
+import com.ngb.wyn.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 import java.util.Timer;
 import java.util.TimerTask;

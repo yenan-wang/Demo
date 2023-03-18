@@ -17,10 +17,10 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.demo.common.ui.CommonButton;
-import com.example.demo.common.utils.AppUtil;
-import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.utils.AppUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 public class ToastActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -12,8 +12,8 @@ import android.view.View;
 import android.widget.RemoteViews;
 
 import com.example.demo.main.R;
-import com.example.demo.common.utils.AppUtil;
-import com.example.demo.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.AppUtil;
+import com.ngb.wyn.common.utils.LogUtil;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;

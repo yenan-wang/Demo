@@ -7,8 +7,8 @@ import androidx.annotation.Nullable;
 
 import com.example.demo.account._pojo.UserInfo;
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.ui.CommonButton;
-import com.example.demo.common.utils.ToastUtil;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 public class DemoActivity extends BaseCommonActivity {
 

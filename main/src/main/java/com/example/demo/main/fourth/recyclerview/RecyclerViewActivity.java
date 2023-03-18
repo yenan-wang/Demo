@@ -15,7 +15,7 @@ import com.example.demo.main.fourth.recyclerview.data.BuyersShowVO;
 import com.example.demo.main.fourth.recyclerview.data.CommodityVO;
 import com.example.demo.main.fourth.recyclerview.data.ImageVO;
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.ui.CommonToolBar;
+import com.ngb.wyn.common.ui.CommonToolBar;
 
 import java.util.ArrayList;
 import java.util.List;

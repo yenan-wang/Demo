@@ -6,8 +6,8 @@ import android.view.View;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.example.demo.common.BaseCommonActivity;
 import com.example.demo.common.constants.ARouterPath;
-import com.example.demo.common.ui.CommonButton;
 import com.example.demo.main.R;
+import com.ngb.wyn.common.ui.CommonButton;
 
 public class ARouterActivity extends BaseCommonActivity implements View.OnClickListener {
 

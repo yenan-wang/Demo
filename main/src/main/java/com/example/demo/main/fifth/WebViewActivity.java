@@ -3,12 +3,12 @@ package com.example.demo.main.fifth;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.demo.common.ui.CommonButton;
 import com.example.demo.main.R;
 import com.example.demo.network.netservice.CommonRepository;
 import com.example.demo.network.bean.PostInfo;
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.utils.ToastUtil;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;

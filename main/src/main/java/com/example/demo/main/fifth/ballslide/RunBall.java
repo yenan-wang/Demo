@@ -14,7 +14,7 @@ import android.widget.Scroller;
 
 import androidx.annotation.Nullable;
 
-import com.example.demo.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.LogUtil;
 
 public class RunBall extends Ball {
     public static final int UP_RIGHT_X = 0;

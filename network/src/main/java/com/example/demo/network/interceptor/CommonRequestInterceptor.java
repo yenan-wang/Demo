@@ -1,6 +1,6 @@
 package com.example.demo.network.interceptor;
 
-import com.example.demo.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.LogUtil;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

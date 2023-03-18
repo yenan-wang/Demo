@@ -1,13 +1,12 @@
 package com.example.demo.common;
 
 import android.app.Application;
-import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.example.demo.common.utils.AppUtil;
 
-public class BaseApplication extends Application {
-    private static Application sApplication;
+public class BaseApplication extends com.ngb.wyn.common.BaseApplication {
+    /*private static Application sApplication;
     private static BaseApplication sContext;
 
     @Override
@@ -33,6 +32,15 @@ public class BaseApplication extends Application {
 
     public static Context getContext() {
         return sContext;
-    }
+    }*/
 
+    @Override
+    public void doOnCreate(Application app) {
+        super.doOnCreate(app);
+        if (AppUtil.isDebug()) {
+            ARouter.openLog();
+            ARouter.openDebug();
+        }
+        ARouter.init(getInstance());
+    }
 }

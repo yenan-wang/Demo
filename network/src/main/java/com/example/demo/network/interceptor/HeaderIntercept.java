@@ -2,7 +2,7 @@ package com.example.demo.network.interceptor;
 
 import androidx.annotation.NonNull;
 
-import com.example.demo.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.LogUtil;
 
 import java.io.IOException;
 

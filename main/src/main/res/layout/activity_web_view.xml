@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".fifth.WebViewActivity">
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

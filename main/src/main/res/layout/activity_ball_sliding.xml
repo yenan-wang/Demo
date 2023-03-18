@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintStart_toEndOf="@id/angel_text"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/set_angel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

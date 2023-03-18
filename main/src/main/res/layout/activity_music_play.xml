@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/play_or_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,14 +13,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.demo.common.ui.progressbar.HorizontalProgressBar
+    <com.ngb.wyn.common.ui.progressbar.HorizontalProgressBar
         android:id="@+id/process"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/play_or_pause" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/process" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/encrypt_music_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/stop" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/decrypt_and_play_music_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

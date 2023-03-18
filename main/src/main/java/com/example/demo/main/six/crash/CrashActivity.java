@@ -13,12 +13,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.ui.CommonButton;
-import com.example.demo.common.utils.DialogUtil;
-import com.example.demo.common.utils.LogUtil;
-import com.example.demo.common.utils.ToastUtil;
-import com.example.demo.common.utils.SpUtil;
 import com.example.demo.main.R;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.utils.DialogUtil;
+import com.ngb.wyn.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.SpUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 public class CrashActivity extends BaseCommonActivity {
 

@@ -2,7 +2,7 @@ package com.example.demo.network.interceptor;
 
 import android.text.TextUtils;
 
-import com.example.demo.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.LogUtil;
 
 import org.json.JSONObject;
 

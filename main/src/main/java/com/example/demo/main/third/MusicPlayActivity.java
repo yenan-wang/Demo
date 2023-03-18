@@ -11,14 +11,14 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import com.example.demo.common.BaseCommonActivity;
-import com.example.demo.common.ui.CommonButton;
-import com.example.demo.common.ui.progressbar.HorizontalProgressBar;
 import com.example.demo.common.utils.EncryptUtil;
-import com.example.demo.common.utils.FileUtil;
-import com.example.demo.common.utils.LogUtil;
-import com.example.demo.common.utils.ToastUtil;
 import com.example.demo.main.R;
 import com.example.demo.network.CommonRequestUtil;
+import com.ngb.wyn.common.ui.CommonButton;
+import com.ngb.wyn.common.ui.progressbar.HorizontalProgressBar;
+import com.ngb.wyn.common.utils.FileUtil;
+import com.ngb.wyn.common.utils.LogUtil;
+import com.ngb.wyn.common.utils.ToastUtil;
 
 import java.io.File;
 

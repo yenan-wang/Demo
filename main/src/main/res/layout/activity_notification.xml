@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.ngb.main.second.NotificationActivity">
 
-    <com.example.demo.common.ui.CommonToolBar
+    <com.ngb.wyn.common.ui.CommonToolBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/common_notice_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_bar" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/fold_notice_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/common_notice_button" />
 
-    <com.example.demo.common.ui.CommonButton
+    <com.ngb.wyn.common.ui.CommonButton
         android:id="@+id/suspend_notice_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
