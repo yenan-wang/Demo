@@ -6,7 +6,9 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 
-public class BaseCommonActivity extends com.ngb.wyn.common.BaseCommonActivity {
+import com.ngb.wyn.common.BaseCommonActivity;
+
+public class BaseActivity extends BaseCommonActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

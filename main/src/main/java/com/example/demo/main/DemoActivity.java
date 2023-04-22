@@ -6,11 +6,11 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import com.example.demo.account._pojo.UserInfo;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.ngb.wyn.common.ui.CommonButton;
 import com.ngb.wyn.common.utils.ToastUtil;
 
-public class DemoActivity extends BaseCommonActivity {
+public class DemoActivity extends BaseActivity {
 
     private CommonButton mCommonButton;
 

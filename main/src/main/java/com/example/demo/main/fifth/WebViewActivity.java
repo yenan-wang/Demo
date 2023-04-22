@@ -6,7 +6,7 @@ import android.view.View;
 import com.example.demo.main.R;
 import com.example.demo.network.netservice.CommonRepository;
 import com.example.demo.network.bean.PostInfo;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.ngb.wyn.common.ui.CommonButton;
 import com.ngb.wyn.common.utils.ToastUtil;
 
@@ -21,7 +21,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
-public class WebViewActivity extends BaseCommonActivity {
+public class WebViewActivity extends BaseActivity {
     private CommonButton mButton;
     //观察者
     private Subscriber<String> mSubscriber = new Subscriber<String>() {

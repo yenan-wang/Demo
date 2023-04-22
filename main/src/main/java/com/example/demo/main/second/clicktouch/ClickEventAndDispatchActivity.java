@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 
 import com.example.demo.main.R;
 import com.example.demo.common.BaseApplication;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 
-public class ClickEventAndDispatchActivity extends BaseCommonActivity implements OnTouchEventListener {
+public class ClickEventAndDispatchActivity extends BaseActivity implements OnTouchEventListener {
     private String[] mSelectArray = BaseApplication.getInstance().getResources().getStringArray(R.array.touch_select_array);
     private BottomGroup mBottomGroup;
     private MiddleGroup mMiddleGroup;

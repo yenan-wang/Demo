@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.R;
 import com.ngb.wyn.common.ui.CommonButton;
 import com.ngb.wyn.common.utils.AssetsUtil;
@@ -16,9 +16,8 @@ import com.ngb.wyn.common.utils.LogUtil;
 import com.ngb.wyn.common.utils.ToastUtil;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
-public class JsonConvertActivity extends BaseCommonActivity {
+public class JsonConvertActivity extends BaseActivity {
 
     private static final String TAG = "JsonConvertActivity";
 

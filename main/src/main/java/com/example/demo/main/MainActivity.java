@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 
 import androidx.lifecycle.Observer;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.fifth.ballslide.BallSlidingActivity;
 import com.example.demo.main.fifth.customview.CustomViewActivity;
 import com.example.demo.main.first.databinding.DataBindingActivity;
@@ -35,7 +35,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class MainActivity extends BaseCommonActivity {
+public class MainActivity extends BaseActivity {
     private static final int DEFAULT_COLUMN_COUNT = 3;
     private LinearLayout mEntryButtonArea;
 

@@ -9,9 +9,9 @@ import android.widget.VideoView;
 import androidx.annotation.Nullable;
 
 import com.example.demo.main.R;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 
-public class VideoActivity extends BaseCommonActivity {
+public class VideoActivity extends BaseActivity {
     private VideoView mVideoView;
 
     @Override

@@ -9,13 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.R;
 import com.ngb.wyn.common.utils.LogUtil;
 import com.ngb.wyn.common.utils.ToastUtil;
 import com.ngb.wyn.common.utils.livedatabus.LiveDataBus;
 
-public class LiveDataBusActivity extends BaseCommonActivity {
+public class LiveDataBusActivity extends BaseActivity {
 
     public static final String LIVE_DATA_BUS_KEY_HELLO = "hello";
 

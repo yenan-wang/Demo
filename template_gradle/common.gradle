@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply from: "${rootProject.projectDir.absolutePath}/template_gradle/publish_maven.gradle"
+apply from: "${rootProject.projectDir.absolutePath}/template_gradle/publish_publishing.gradle"
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
@@ -30,6 +30,10 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 
     buildFeatures {

@@ -14,13 +14,13 @@ import com.example.demo.main.fourth.recyclerview.adapter.DemoRecyclerAdapter;
 import com.example.demo.main.fourth.recyclerview.data.BuyersShowVO;
 import com.example.demo.main.fourth.recyclerview.data.CommodityVO;
 import com.example.demo.main.fourth.recyclerview.data.ImageVO;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.ngb.wyn.common.ui.CommonToolBar;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewActivity extends BaseCommonActivity {
+public class RecyclerViewActivity extends BaseActivity {
     private static final int DEFAULT_SPAN_COUNT = 2;
     private CommonToolBar mToolBar;
     private RecyclerView mRecyclerView;

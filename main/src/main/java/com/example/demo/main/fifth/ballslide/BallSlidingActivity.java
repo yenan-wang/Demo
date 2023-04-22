@@ -5,12 +5,12 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.R;
 import com.ngb.wyn.common.ui.CommonButton;
 import com.ngb.wyn.common.utils.ToastUtil;
 
-public class BallSlidingActivity extends BaseCommonActivity {
+public class BallSlidingActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

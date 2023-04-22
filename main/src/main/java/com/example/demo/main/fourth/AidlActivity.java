@@ -15,14 +15,14 @@ import androidx.annotation.Nullable;
 
 import com.example.demo.aidl.Book;
 import com.example.demo.aidl.IBookManager;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.R;
 import com.ngb.wyn.common.utils.LogUtil;
 import com.ngb.wyn.common.utils.ToastUtil;
 
 import java.util.List;
 
-public class AidlActivity extends BaseCommonActivity {
+public class AidlActivity extends BaseActivity {
     private IBookManager mBookManager;
     private List<Book> mBookList;
     private Button mButtonGet;

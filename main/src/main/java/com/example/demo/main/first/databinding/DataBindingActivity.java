@@ -6,12 +6,12 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.R;
 import com.example.demo.main.databinding.ActivityDataBingingBinding;
 import com.example.demo.main.first.databinding.data.TemplateData;
 
-public class DataBindingActivity extends BaseCommonActivity {
+public class DataBindingActivity extends BaseActivity {
 
     private ActivityDataBingingBinding mBinding;
     private TemplateData mData;

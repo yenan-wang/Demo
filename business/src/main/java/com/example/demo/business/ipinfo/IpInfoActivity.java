@@ -5,9 +5,9 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 
 import com.example.demo.business.net.IpInfoTask;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 
-public class IpInfoActivity extends BaseCommonActivity {
+public class IpInfoActivity extends BaseActivity {
 
     private IpInfoPresenter mIpInfoPresenter;
     private IpInfoFragment mIpInfoFragment;

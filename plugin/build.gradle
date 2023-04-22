@@ -1,6 +1,6 @@
 plugins {
-    //id "maven-publish"
-    id "maven"
+    id "maven-publish"
+    //id "maven"
     id "groovy"
 }
 apply from: "${rootProject.projectDir.absolutePath}/publish_version.gradle"
@@ -20,7 +20,7 @@ def publishVersion = getPublishVersion()
 }
 project.artifacts.archives project.sourcePlugin*/
 
-uploadArchives {
+/*uploadArchives {
     repositories {
         mavenDeployer {
             println("publish versionId = $publishVersion, url = $mavenUrl")
@@ -46,8 +46,8 @@ uploadArchives {
             println("publish url: $mavenUrl")
         }
     }
-}
-/*publishing {
+}*/
+publishing {
     publications {
         demoPlugin(MavenPublication) {
             from components.java
@@ -60,7 +60,7 @@ uploadArchives {
     repositories {
         maven { url uri("../repo") }
     }
-}*/
+}
 
 dependencies {
     implementation "org.ow2.asm:asm:9.1"

@@ -10,7 +10,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.common.utils.EncryptUtil;
 import com.example.demo.main.R;
 import com.example.demo.network.CommonRequestUtil;
@@ -22,7 +22,7 @@ import com.ngb.wyn.common.utils.ToastUtil;
 
 import java.io.File;
 
-public class MusicPlayActivity extends BaseCommonActivity {
+public class MusicPlayActivity extends BaseActivity {
 
     //private static final String URL = "https://m801.music.126.net/20220506224335/19a2112c06d0e63b7ab2310d39b8d444/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096440447/f0d0/3fb1/34f3/07609c3e62164085dad86c7c6cdf7af3.mp3";
     //private static final String URL = "http://m801.music.126.net/20220506233855/e31a3cacf63fccd7d70bd2d70d6b58de/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096440447/f0d0/3fb1/34f3/07609c3e62164085dad86c7c6cdf7af3.mp3";

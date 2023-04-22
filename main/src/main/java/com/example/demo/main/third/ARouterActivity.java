@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.common.constants.ARouterPath;
 import com.example.demo.main.R;
 import com.ngb.wyn.common.ui.CommonButton;
 
-public class ARouterActivity extends BaseCommonActivity implements View.OnClickListener {
+public class ARouterActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

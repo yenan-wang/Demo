@@ -11,9 +11,6 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-import cn.finalteam.okhttpfinal.BaseHttpRequestCallback;
-import cn.finalteam.okhttpfinal.HttpRequest;
-import cn.finalteam.okhttpfinal.RequestParams;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -23,7 +20,6 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
-import okio.Buffer;
 import okio.BufferedSink;
 import okio.BufferedSource;
 

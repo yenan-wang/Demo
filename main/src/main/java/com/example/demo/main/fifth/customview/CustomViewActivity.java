@@ -15,12 +15,12 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.demo.main.R;
 import com.example.demo.main.fifth.customview.bihua.CustomViewBihuaFragment;
 import com.google.android.material.tabs.TabLayout;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomViewActivity extends BaseCommonActivity {
+public class CustomViewActivity extends BaseActivity {
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
     private Handler mHandler;

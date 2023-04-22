@@ -1,4 +1,4 @@
-def GLIDE_VERSION = "4.11.0"
+def GLIDE_VERSION = "4.13.2"
 def kotlin_version = "1.6.10"
 ext {
     android = [
@@ -28,13 +28,12 @@ ext {
                     'com.squareup.retrofit2:adapter-rxjava2:2.6.1',
                     'com.squareup.okhttp3:logging-interceptor:3.9.1',
                     'com.google.code.gson:gson:2.8.5',
-                    "com.ngb.wyn.base_util:common:1.0.1",
+                    "com.ngb.wyn.base_util:common:2.0.0",
                     "androidx.core:core-ktx:1.6.0",
-                    "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
                     "com.alibaba:arouter-api:1.5.2"
             ],
             commonImplementation: [
-                    "com.zlc.glide:webpdecoder:2.0.${GLIDE_VERSION}",
+                    "com.github.zjupure:webpdecoder:2.3.${GLIDE_VERSION}",
                     "com.github.bumptech.glide:glide:${GLIDE_VERSION}"
             ],
             annotationProcessor : [

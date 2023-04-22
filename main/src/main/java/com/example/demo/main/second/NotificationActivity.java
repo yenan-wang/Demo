@@ -16,12 +16,12 @@ import androidx.core.app.NotificationCompat;
 
 import com.example.demo.main.MainActivity;
 import com.example.demo.main.R;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.ngb.wyn.common.CommonConstants;
 import com.ngb.wyn.common.ui.CommonButton;
 import com.ngb.wyn.common.utils.ToastUtil;
 
-public class NotificationActivity extends BaseCommonActivity implements View.OnClickListener {
+public class NotificationActivity extends BaseActivity implements View.OnClickListener {
     private static final String CHANNEL_ID_COMMON_MESSAGE = "common_message";
     private static final String CHANNEL_ID_FOLD_MESSAGE = "fold_message";
     private static final String CHANNEL_ID_SUSPEND_MESSAGE = "suspend_message";

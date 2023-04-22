@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.R;
 import com.ngb.wyn.common.ui.CommonButton;
 import com.ngb.wyn.common.utils.DialogUtil;
@@ -20,7 +20,7 @@ import com.ngb.wyn.common.utils.LogUtil;
 import com.ngb.wyn.common.utils.SpUtil;
 import com.ngb.wyn.common.utils.ToastUtil;
 
-public class CrashActivity extends BaseCommonActivity {
+public class CrashActivity extends BaseActivity {
 
     private static final int SEND_MESSAGE = 0;
     private static final String LAST_TIME = "last_time";

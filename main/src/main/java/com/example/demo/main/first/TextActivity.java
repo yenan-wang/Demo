@@ -5,9 +5,9 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 
 import com.example.demo.main.R;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 
-public class TextActivity extends BaseCommonActivity {
+public class TextActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

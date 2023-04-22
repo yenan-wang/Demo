@@ -5,11 +5,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.common.constants.ARouterPath;
 
 @Route(path = ARouterPath.Business.HOME_ACTIVITY)
-public class BusinessActivity extends BaseCommonActivity {
+public class BusinessActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

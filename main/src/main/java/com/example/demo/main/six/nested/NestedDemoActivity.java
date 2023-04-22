@@ -4,10 +4,10 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-import com.example.demo.common.BaseCommonActivity;
+import com.example.demo.common.BaseActivity;
 import com.example.demo.main.R;
 
-public class NestedDemoActivity extends BaseCommonActivity {
+public class NestedDemoActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

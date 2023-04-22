@@ -3,13 +3,13 @@ apply from: "config.gradle"
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven {
             url uri("repo")
         }
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.0.2"
+        classpath "com.android.tools.build:gradle:7.0.2"
         classpath "com.example.demo.plugin:network-tool-plugin:0.0.1-LOCAL"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
 
@@ -21,7 +21,7 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url uri("../repo") }
         maven { url "https://raw.githubusercontent.com/yenan-wang/BaseCommonUtil/master" }
     }

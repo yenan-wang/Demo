@@ -42,6 +42,7 @@ dependencies {
     if (!rootProject.ext.configSwitch.isRunAlone) {
         //implementation project(":service")
     }
+    implementation 'androidx.core:core-ktx:1.6.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
